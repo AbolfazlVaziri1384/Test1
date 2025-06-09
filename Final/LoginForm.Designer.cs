@@ -37,17 +37,18 @@
             pictureBox1 = new PictureBox();
             btnLogin = new Button();
             linkLabel1 = new LinkLabel();
+            btnSetUser = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("B Koodak", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(467, 84);
+            label1.Location = new Point(409, 63);
             label1.Name = "label1";
-            label1.Size = new Size(132, 39);
+            label1.Size = new Size(112, 24);
             label1.TabIndex = 0;
             label1.Text = "ورود به سیستم";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -56,11 +57,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(605, 157);
+            label2.Location = new Point(529, 118);
             label2.Name = "label2";
-            label2.Size = new Size(76, 29);
+            label2.Size = new Size(73, 17);
             label2.TabIndex = 1;
             label2.Text = ":نام کاربری";
             // 
@@ -68,27 +69,29 @@
             // 
             txtUserName.BackColor = SystemColors.Window;
             txtUserName.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(453, 159);
+            txtUserName.Location = new Point(396, 119);
+            txtUserName.Margin = new Padding(3, 2, 3, 2);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(146, 30);
+            txtUserName.Size = new Size(128, 26);
             txtUserName.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
+            label3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.RoyalBlue;
-            label3.Location = new Point(611, 217);
+            label3.Location = new Point(535, 163);
             label3.Name = "label3";
-            label3.Size = new Size(70, 29);
+            label3.Size = new Size(68, 17);
             label3.TabIndex = 3;
             label3.Text = ":رمز عبور";
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(453, 216);
+            txtPassword.Location = new Point(396, 162);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(146, 27);
+            txtPassword.Size = new Size(128, 23);
             txtPassword.TabIndex = 4;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -97,9 +100,10 @@
             chkShowPassword.AutoSize = true;
             chkShowPassword.BackColor = Color.White;
             chkShowPassword.ForeColor = SystemColors.ActiveCaptionText;
-            chkShowPassword.Location = new Point(429, 222);
+            chkShowPassword.Location = new Point(375, 166);
+            chkShowPassword.Margin = new Padding(3, 2, 3, 2);
             chkShowPassword.Name = "chkShowPassword";
-            chkShowPassword.Size = new Size(18, 17);
+            chkShowPassword.Size = new Size(15, 14);
             chkShowPassword.TabIndex = 5;
             chkShowPassword.UseVisualStyleBackColor = false;
             chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
@@ -108,9 +112,10 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.finalIcon1;
-            pictureBox1.Location = new Point(81, 84);
+            pictureBox1.Location = new Point(71, 63);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(314, 280);
+            pictureBox1.Size = new Size(275, 210);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -119,11 +124,12 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.AliceBlue;
-            btnLogin.Font = new Font("B Koodak", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnLogin.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnLogin.ForeColor = Color.MediumBlue;
-            btnLogin.Location = new Point(453, 298);
+            btnLogin.Location = new Point(396, 224);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(146, 42);
+            btnLogin.Size = new Size(128, 32);
             btnLogin.TabIndex = 7;
             btnLogin.Text = "ورود";
             btnLogin.UseVisualStyleBackColor = false;
@@ -132,22 +138,33 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("B Koodak", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            linkLabel1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
             linkLabel1.LinkColor = Color.DeepPink;
-            linkLabel1.Location = new Point(506, 246);
+            linkLabel1.Location = new Point(443, 184);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(93, 26);
+            linkLabel1.Size = new Size(95, 15);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "بازیابی رمز عبور";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // btnSetUser
+            // 
+            btnSetUser.Location = new Point(409, 261);
+            btnSetUser.Name = "btnSetUser";
+            btnSetUser.Size = new Size(105, 37);
+            btnSetUser.TabIndex = 9;
+            btnSetUser.Text = "button1";
+            btnSetUser.UseVisualStyleBackColor = true;
+            btnSetUser.Click += button1_Click;
+            // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
+            Controls.Add(btnSetUser);
             Controls.Add(linkLabel1);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox1);
@@ -157,6 +174,7 @@
             Controls.Add(txtUserName);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
@@ -178,5 +196,6 @@
         private PictureBox pictureBox1;
         private Button btnLogin;
         private LinkLabel linkLabel1;
+        private Button btnSetUser;
     }
 }

@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Ui_Shit\\Test1\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Ui_Shit\\Test1\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,12 +53,72 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "frmDormitory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmDormitory.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmDormitory.cs [Design]",
+              "RelativeToolTip": "Final\\frmDormitory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:46:04.376Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmUser.cs [Design]",
+              "RelativeToolTip": "Final\\frmUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:40:55.144Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmMain.cs",
+              "RelativeDocumentMoniker": "Final\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmMain.cs [Design]",
+              "RelativeToolTip": "Final\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:37:53.296Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmSetUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmSetUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmSetUser.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:22:37.857Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ForgotPasswordForm.cs",
-              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
               "RelativeToolTip": "Final\\ForgotPasswordForm.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAUwDMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -57,9 +129,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ForgotPasswordForm.cs [Design]",
-              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs [Design]",
               "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T07:06:59.766Z",
@@ -67,37 +139,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
-              "RelativeToolTip": "Final\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T10:23:09.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\Models\\User.cs",
               "RelativeDocumentMoniker": "Final\\Models\\User.cs",
-              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\Models\\User.cs",
               "RelativeToolTip": "Final\\Models\\User.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAA/wFQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:57:32.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T06:57:32.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\LoginForm.cs [Design]",
               "RelativeToolTip": "Final\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T09:17:19.516Z",
