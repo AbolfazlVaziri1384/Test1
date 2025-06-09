@@ -55,14 +55,11 @@ namespace Final
                         User.SetLogin(user);
 
                         MessageBoxTool.msgw($"خوش آمدید {user.FirstName} {user.LastName}");
-                        /////
-                        user.UserName = txtUserName.Text;
-                        user.Password = txtPassword.Text;
-                        //frm.user = user;
-                        //////////////////frmMain
-                        ForgotPasswordForm frm = new ForgotPasswordForm();
+
+                        frmMain frm = new frmMain();
+                        frm.UserId = user.Id;
                         frm.Show();
-                        Hide();
+                        Close();
                     }
                     else
                     {
@@ -100,7 +97,8 @@ namespace Final
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmSetUser frm = new frmSetUser();
+            frm.ShowDialog();
         }
     }
 }

@@ -102,4 +102,57 @@ public partial class User
         }
         db.SaveChanges();
     }
+    public static void SetUser(string FirstName, string LastName, 
+                               string UserName, string Password, 
+                               string Address, long NationalCode,
+                               long Stu_Per_Code, long Phone, 
+                               string Birthday , bool IsMan)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        User user = new User();
+        user.FirstName = FirstName;
+        user.LastName = LastName;
+        user.UserName = UserName;
+        user.Password = Password;
+        if (IsMan == false) user.Gender = 0;
+        else user.Gender = 1;
+        user.Birthday = Birthday;
+        user.NationalCode = NationalCode;
+        user.StuPerCode = Stu_Per_Code;
+        user.Phone = Phone;
+        user.Address = Address;
+        user.IsActive = true;
+        user.IsDeleted = true;
+        
+        db.Users.Add(user);
+        db.SaveChanges();
+    }
+    public static void EditUser(long UserEditId ,long UserId ,string FirstName, string LastName,
+                               string UserName, string Password,
+                               string Address, long NationalCode,
+                               long Stu_Per_Code, long Phone,
+                               string Birthday, bool IsMan)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        User? user = new User();
+        user = User.FindUserById(UserEditId);
+        user.FirstName = FirstName;
+        user.LastName = LastName;
+        user.UserName = UserName;
+        user.Password = Password;
+        if (IsMan == false) user.Gender = 0;
+        else user.Gender = 1;
+        user.Birthday = Birthday;
+        user.NationalCode = NationalCode;
+        user.StuPerCode = Stu_Per_Code;
+        user.Phone = Phone;
+        user.Address = Address;
+        user.IsActive = true;
+        user.IsDeleted = true;
+        user.ModifiedBy = User.FindUserById(UserId).Id;
+        user.ModifiedOn = DateTime.Now;
+
+        db.Users.Add(user);
+        db.SaveChanges();
+    }
 }

@@ -34,31 +34,36 @@
             // 
             // mnuSetUser
             // 
-            mnuSetUser.Location = new Point(418, 401);
+            mnuSetUser.Location = new Point(478, 535);
+            mnuSetUser.Margin = new Padding(3, 4, 3, 4);
             mnuSetUser.Name = "mnuSetUser";
-            mnuSetUser.Size = new Size(89, 37);
+            mnuSetUser.Size = new Size(102, 49);
             mnuSetUser.TabIndex = 0;
             mnuSetUser.Text = "button1";
             mnuSetUser.UseVisualStyleBackColor = true;
+            mnuSetUser.Click += mnuSetUser_Click;
             // 
             // mnuUsers
             // 
-            mnuUsers.Location = new Point(289, 401);
+            mnuUsers.Location = new Point(330, 535);
+            mnuUsers.Margin = new Padding(3, 4, 3, 4);
             mnuUsers.Name = "mnuUsers";
-            mnuUsers.Size = new Size(89, 37);
+            mnuUsers.Size = new Size(102, 49);
             mnuUsers.TabIndex = 1;
             mnuUsers.Text = "button1";
             mnuUsers.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(mnuUsers);
             Controls.Add(mnuSetUser);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmMain";
             Text = "frmMain";
+            Load += frmMain_Load;
             ResumeLayout(false);
         }
 
