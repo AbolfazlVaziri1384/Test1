@@ -48,91 +48,106 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(485, 36);
+            txtFirstName.Location = new Point(554, 48);
+            txtFirstName.Margin = new Padding(3, 4, 3, 4);
             txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(100, 23);
+            txtFirstName.Size = new Size(114, 27);
             txtFirstName.TabIndex = 0;
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(485, 94);
+            txtLastName.Location = new Point(554, 125);
+            txtLastName.Margin = new Padding(3, 4, 3, 4);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(100, 23);
+            txtLastName.Size = new Size(114, 27);
             txtLastName.TabIndex = 1;
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(485, 144);
+            txtUserName.Location = new Point(554, 192);
+            txtUserName.Margin = new Padding(3, 4, 3, 4);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(100, 23);
+            txtUserName.Size = new Size(114, 27);
             txtUserName.TabIndex = 2;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(485, 188);
+            txtPassword.Location = new Point(554, 251);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.Size = new Size(114, 27);
             txtPassword.TabIndex = 3;
             // 
             // txtConfirmPassword
             // 
-            txtConfirmPassword.Location = new Point(485, 232);
+            txtConfirmPassword.Location = new Point(554, 309);
+            txtConfirmPassword.Margin = new Padding(3, 4, 3, 4);
             txtConfirmPassword.Name = "txtConfirmPassword";
-            txtConfirmPassword.Size = new Size(100, 23);
+            txtConfirmPassword.Size = new Size(114, 27);
             txtConfirmPassword.TabIndex = 4;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(485, 273);
+            txtAddress.Location = new Point(554, 364);
+            txtAddress.Margin = new Padding(3, 4, 3, 4);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(100, 23);
+            txtAddress.Size = new Size(114, 27);
             txtAddress.TabIndex = 5;
             // 
             // numNationalCode
             // 
-            numNationalCode.Location = new Point(465, 302);
+            numNationalCode.Location = new Point(531, 403);
+            numNationalCode.Margin = new Padding(3, 4, 3, 4);
             numNationalCode.Name = "numNationalCode";
-            numNationalCode.Size = new Size(120, 23);
+            numNationalCode.Size = new Size(137, 27);
             numNationalCode.TabIndex = 6;
             // 
             // numStu_Per_Code
             // 
-            numStu_Per_Code.Location = new Point(465, 331);
+            numStu_Per_Code.Location = new Point(531, 441);
+            numStu_Per_Code.Margin = new Padding(3, 4, 3, 4);
             numStu_Per_Code.Name = "numStu_Per_Code";
-            numStu_Per_Code.Size = new Size(120, 23);
+            numStu_Per_Code.Size = new Size(137, 27);
             numStu_Per_Code.TabIndex = 7;
             // 
             // numPhone
             // 
-            numPhone.Location = new Point(465, 360);
+            numPhone.Location = new Point(531, 480);
+            numPhone.Margin = new Padding(3, 4, 3, 4);
             numPhone.Name = "numPhone";
-            numPhone.Size = new Size(120, 23);
+            numPhone.Size = new Size(137, 27);
             numPhone.TabIndex = 8;
             // 
             // mskbirthday
             // 
-            mskbirthday.Location = new Point(236, 36);
+            mskbirthday.Location = new Point(270, 48);
+            mskbirthday.Margin = new Padding(3, 4, 3, 4);
+            mskbirthday.Mask = "0000/00/00";
             mskbirthday.Name = "mskbirthday";
-            mskbirthday.Size = new Size(100, 23);
+            mskbirthday.Size = new Size(114, 27);
             mskbirthday.TabIndex = 9;
+            mskbirthday.ValidatingType = typeof(DateTime);
             // 
             // radWoman
             // 
             radWoman.AutoSize = true;
-            radWoman.Location = new Point(236, 79);
+            radWoman.Location = new Point(270, 105);
+            radWoman.Margin = new Padding(3, 4, 3, 4);
             radWoman.Name = "radWoman";
-            radWoman.Size = new Size(94, 19);
+            radWoman.Size = new Size(117, 24);
             radWoman.TabIndex = 11;
             radWoman.TabStop = true;
             radWoman.Text = "radioButton1";
             radWoman.UseVisualStyleBackColor = true;
+            radWoman.CheckedChanged += radWoman_CheckedChanged;
             // 
             // radMan
             // 
             radMan.AutoSize = true;
-            radMan.Location = new Point(236, 104);
+            radMan.Location = new Point(270, 139);
+            radMan.Margin = new Padding(3, 4, 3, 4);
             radMan.Name = "radMan";
-            radMan.Size = new Size(94, 19);
+            radMan.Size = new Size(117, 24);
             radMan.TabIndex = 12;
             radMan.TabStop = true;
             radMan.Text = "radioButton2";
@@ -140,18 +155,20 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(639, 415);
+            btnSave.Location = new Point(730, 553);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 13;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmSetUser
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnSave);
             Controls.Add(radMan);
             Controls.Add(radWoman);
@@ -165,8 +182,10 @@
             Controls.Add(txtUserName);
             Controls.Add(txtLastName);
             Controls.Add(txtFirstName);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmSetUser";
             Text = "frmSetUser";
+            Load += frmSetUser_Load;
             ((System.ComponentModel.ISupportInitialize)numNationalCode).EndInit();
             ((System.ComponentModel.ISupportInitialize)numStu_Per_Code).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPhone).EndInit();

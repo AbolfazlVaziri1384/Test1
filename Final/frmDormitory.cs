@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class frmDormitory: Form
+    public partial class frmDormitory : Form
     {
         public frmDormitory()
         {
             InitializeComponent();
+        }
+
+        private void frmDormitory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

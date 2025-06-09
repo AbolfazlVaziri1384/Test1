@@ -1,7 +1,25 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\",
   "Documents": [],
+=======
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\tools\\checktool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\tools\\checktool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\ssa\\Test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+>>>>>>> c17f73a39b70b7438024b7e87c872fed176e7bda
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +27,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> c17f73a39b70b7438024b7e87c872fed176e7bda
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,6 +42,7 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -30,6 +53,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+=======
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckTool.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Tools\\CheckTool.cs",
+              "RelativeDocumentMoniker": "Final\\Tools\\CheckTool.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Tools\\CheckTool.cs",
+              "RelativeToolTip": "Final\\Tools\\CheckTool.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:39:34.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmSetUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:58:32.78Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmSetUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
+              "RelativeToolTip": "Final\\frmSetUser.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIAwwCoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:57:38.692Z",
+              "EditorCaption": ""
+>>>>>>> c17f73a39b70b7438024b7e87c872fed176e7bda
             }
           ]
         }

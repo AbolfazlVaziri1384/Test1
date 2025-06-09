@@ -18,7 +18,7 @@ public partial class User
 
     public int Gender { get; set; }
 
-    public DateOnly Birthday { get; set; }
+    public string Birthday { get; set; }
 
     public long StuPerCode { get; set; }
 
@@ -71,6 +71,16 @@ public partial class User
     {
         DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
+    }
+    public static User? FindUserById(long UserId)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Where(i => i.Id == UserId).FirstOrDefault();
+    }
+    public static bool AnyUser(string UserName)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Any(i => i.UserName == UserName);
     }
     public static void ChangePassword(User user, string Password)
     {
