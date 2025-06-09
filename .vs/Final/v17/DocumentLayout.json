@@ -1,38 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\tools\\checktool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\tools\\checktool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Ui_Shit\\Test1\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Ui_Shit\\Test1\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\ssa\\Test1\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\ui_shit\\test1\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,113 +33,42 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckTool.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Tools\\CheckTool.cs",
+              "RelativeDocumentMoniker": "Final\\Tools\\CheckTool.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Tools\\CheckTool.cs",
+              "RelativeToolTip": "Final\\Tools\\CheckTool.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:39:34.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmDormitory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmDormitory.cs",
-              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmDormitory.cs [Design]",
-              "RelativeToolTip": "Final\\frmDormitory.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "frmSetUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:46:04.376Z",
+              "WhenOpened": "2025-06-09T10:58:32.78Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmUser.cs",
-              "RelativeDocumentMoniker": "Final\\frmUser.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmUser.cs [Design]",
-              "RelativeToolTip": "Final\\frmUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:40:55.144Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmMain.cs",
-              "RelativeDocumentMoniker": "Final\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmMain.cs [Design]",
-              "RelativeToolTip": "Final\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:37:53.296Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmSetUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmSetUser.cs",
+              "Title": "frmSetUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
               "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\frmSetUser.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetUser.cs",
+              "RelativeToolTip": "Final\\frmSetUser.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIAwwCoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:22:37.857Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ForgotPasswordForm.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
-              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
-              "RelativeToolTip": "Final\\ForgotPasswordForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAUwDMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:08:43.483Z",
+              "WhenOpened": "2025-06-09T10:57:38.692Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ForgotPasswordForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs",
-              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\ForgotPasswordForm.cs [Design]",
-              "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:06:59.766Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Final\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\Models\\User.cs",
-              "RelativeToolTip": "Final\\Models\\User.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAA/wFQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:57:32.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Ui_Shit\\Test1\\Final\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Final\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:17:19.516Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
