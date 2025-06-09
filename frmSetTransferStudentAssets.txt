@@ -1,0 +1,98 @@
+
+	    DormitoryDbContext db = new DormitoryDbContext();
+		// باید فرستاده شود
+		long StudentAssetId ;
+//**********************************
+
+//******************************
+//دکمه اصلی
+            try
+            {
+bool Istrue ;
+if (dgvStudent.Rows.Count == 0)
+    {
+        return;
+    }
+	// در این فایل یک جور ویرایش داریم
+    long id;
+    id = long.Parse(dgvStudents.CurrentRow.Cells[0].Value.ToString());
+Isture = CheckTool.SetTransferStudentAssetsField(id);
+										var studentas = db.StudentAsset.find(i => i.Id == StudentAssetId).firstordefult();
+
+								if (Istrue == true)
+												{
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								////creat ها حتما پر شوند !!!
+/////برای تاریخ انتقال همین امروز را یزن
+											db.SaveChanges();
+													MessageBoxTool.msgr("اتاق با موفقیت اختصاص داده شد");
+													Close();
+								}
+
+
+                
+                
+                }
+                            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
+        }
+
+
+
+//*************************** باید درست شود
+// data grid view
+
+Private void RefreshStudentsList(List<Users> Studentslist)
+{
+    dgvStudents.Rows.Clear();
+    List<Users> Lst = new List<Users>();
+    foreach (var item in Studentslist)
+    {
+// باید نقشش هم دانشجو باشد!! و صاحب اصلی هم نباشد
+// فقط باید نام و نام خانوادگی را نمایش دهد
+// سرچ هم بر همین اساس است
+        if (item.CreatBy == ) && (item.IsDeleted == false)&& (db.RoomAssigments.Any(i => i.StudentId == item.Id) == flase)
+        {
+            dgvDormitories.Rows.Add(item.Id.ToString(),
+                                   item.FirstName,
+                                   item.LastName,
+                                   item.Stu_Per_Code.ToString(),
+                                   item.NationalCode.ToString());
+        }
+
+    }
+    
+    
+}
+
+//*******************************
+
+//*******************************باید درست شود
+//textsearch
+
+try
+{
+    RefreshStudentsList((List<Users>)db.Users.Where(i => i.FirstName.contain() == txtSearch.text.Trim() || 
+													   i.LastName.contain() == txtSearch.text.Trim() ||
+													   i.Stu_Per_Code.contain() == txtSearch.text.Trim() ||
+													   i.NationalCode.contain() == txtSearch.text.Trim() ).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************

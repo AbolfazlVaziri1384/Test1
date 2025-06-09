@@ -1,0 +1,198 @@
+//******************************
+// بالای صفحه 
+	Roles role = new Roles();
+//*******************************
+
+//***************
+//هنگام لود صفحه
+long BlockId;
+
+long? Id =  db.Roles.Where(i => i.BlockId == BlockId).FirstOrDifult().UserId;
+var Block = db.Blocks.Where(i => i.Id == BlockId).FirstOrDefault();
+
+if (Id != null)
+{
+var Owener = db.Users.Where(i => i.Id == Id).Select(d => d.Firstame , d.LastName , d.gender).FirstOrDefault();
+string name = ((Owener.gender == 0)? "" : "") + Owener.Firstame + Owener.LastName;
+frmBlock.text = string.format(" اتاق های بلوک {0} خوابگاه {1} با مدیریت {2} " , Block.Name , db.Dormitories.Where(i => i.Id == Block.DormitoryId).FirstOrDefault().Name , name);
+}
+else 
+{
+frmDormitory.text = string.format(" !اتاق های بلوک {0} خوابگاه {1} بدون مدیر" , Block.Name , db.Dormitories.Where(i => i.Id == Block.DormitoryId).FirstOrDefault().Name );
+}
+
+//*****************
+
+//***************************
+// data grid view
+
+Private void RefreshRoomsList(List<Rooms> Roomslist)
+{
+    dgvRooms.Rows.Clear();
+    List<Rooms> Lst = new List<Rooms>();
+    foreach (var item in Roomslist)
+    {
+	int Count = 0;
+	//پیدا کردن افراد داخل یک اتاق
+	foreach(var item2 in db.RoomAssigment)
+	{
+	if(item2.RoomId == item.Id) Count++;
+	}
+        if (item.CreatBy == ) && (item.IsDeleted == false) && (db.Users.Where(i => i.Id == item.CreatBy).FirstOrDifult().IsDeleted == flase) && (item.BlockId == BlockId)
+        {
+            dgvDormitories.Rows.Add(item.Id.ToString(),
+                                   item.Number.ToString(),
+                                   item.FloorNumber.ToString(),
+                                   item.Capacity.ToString(),
+								   Count.ToString());
+        }
+
+    }
+    //Color هر وقت کسی را ثبت می کنی برایاتتاقی باید از ظرفیت خوابگاه کم شود و حر  وقت حذف می کنی باید به ظرفیت اضافه شود تا این مورد به درست ی کار کند
+	if (dgvRooms.Rows.Count != 0)
+            {
+			foreach (DataGridViewRow row in dgvRooms.Rows)
+			{
+if (row.Cells[4].Value.ToString() == row.Cells[3].Value.ToString())
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+				
+				}
+			}
+    
+}
+
+//*******************************
+
+//*******************************
+//textsearch
+
+try
+{
+    RefreshRoomsListsListListsList((List<Rooms>)db.Rooms.Where(i => i.Number.contain() == txtSearch.text.Trim() ||
+																	i.FloorNumber.contain() == txtSearch.text.Trim()).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************
+
+//******************
+//btnEdit
+
+try
+{
+    if (dgvBlocks.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+    frmSetRoom frm = new frmSetRoom();
+    frm.RoomEditId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshRoomsList(db.Rooms.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//************************
+//btnDelete
+
+try
+{
+    if (dgvRooms.Rows.Count  == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            Rooms room = db.Rooms.Where(i => i.Id == id).FirstOrDefault();
+			room.IsDeleted = true;
+			//*************
+			room.DeletedBy = true;
+			room.DeletedTime = DateTime.now();
+            MessageBoxTool.msg();
+            RefreshRoomsList(db.Rooms.ToList());
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************
+
+//*****************************
+//btnSetRoom
+
+try
+{
+frmSetRoom frm = new frmSetRoom();
+frm.ShowDialog();
+RefreshRoomsList(db.Rooms.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//*****************************
+//btnSetRoomAssigment
+
+try
+{
+frmSetRoomAssigment frm = new frmSetRoomAssigment();
+frm.ShowDialog();
+// RefreshDormitoriesListsList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+
+
+//******************
+//btnShowRoomAssigment
+
+try
+{
+    if (dgvRooms.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+    frmRoomAssigment frm = new frmRoomAssigment();
+    frm.RoomId = id;
+    frm.ShowDialog();
+    //db = new DormitoryDbContext();
+    //RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************

@@ -1,0 +1,177 @@
+//***************************
+// data grid view
+
+Private void RefreshUsersList(List<Users> Userslist)
+{
+    dgvUsers.Rows.Clear();
+    List<User> Lst = new List<User>();
+    foreach (var item in Userslist)
+    {
+	//اسم مدیری که الان داره نگاه میکنه نمایش داده نشود
+        if (item.Id != ) && (item.IsDeleted == false)
+        {
+            dataGridView1.Rows.Add(item.Id.ToString(),
+                                   item.FirstName,
+                                   item.LastName,
+								   (item.Gender == 0)? "خانم" : "آقا",
+								   /////////////////////
+								   item.birthday,
+								   item.Stu_Per_Code,
+								   item.NationalCode,
+								   item.Phone,
+								   item.Address,
+								  (item.IsActive == True)? "فعالم" : "آقا",
+								  //**********
+                                   item.Harvest.ToString("N0"),
+                                   item.Deposit.ToString("N0"),
+                                   item.Harm.ToString("N0"),
+                                   item.Profit.ToString("N0"),
+								   //*******
+                                   item.Date.ToHDateTime());
+        }
+
+    }
+
+    //Color 
+	if (dataGridView2.Rows.Count != 0)
+            {
+			foreach (DataGridViewRow row in dataGridView2.Rows)
+			{
+	// برای زمانی که اگر کسی غیر فعال است قر مز بشه
+if (row.Cells[4].Value.ToString() != "0")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+				}
+			}
+    
+                
+
+}
+
+//*******************************
+
+//*******************************
+//textsearch
+
+try
+{
+    RefreshMoneysList((List<Users>)db.Users.Where(i => i.FirstName.contain() == txtSearch.text.Trim() || 
+													   i.LastName.contain() == txtSearch.text.Trim() ||
+													   i.Stu_Per_Code.contain() == txtSearch.text.Trim() ||
+													   i.NationalCode.contain() == txtSearch.text.Trim() ).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************
+
+//*****************************
+//btnAdd
+
+try
+{
+frmSetUser frm = new frmSetUser();
+frm.ShowDialog();
+RefreshUsersList(db.Users.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//******************
+//btnEdit
+
+try
+{
+    if (dataGridView1.Rows.Count == 0)
+    {
+        return;
+    }
+    int id;
+    id = int.Parse(dgvUsers.CurrentRow.Cells[0].Value.ToString());
+    frmSetUser frm = new frmSetUser();
+    frm.UserEditId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshUsersListsList(db.Users.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//************************
+//btnDelete
+
+try
+{
+    if (dgvUsers.Rows.Count  == 0)
+    {
+        return;
+    }
+    int id;
+    id = int.Parse(dgvUsers.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            User user = db.Users.Where(i => i.Id == id).FirstOrDefault();
+			user.IsDeleted = true;
+			//*************
+			user.DeletedBy = true;
+			user.DeletedTime = DateTime.now();
+            MessageBoxTool.msg();
+            RefreshUsersListsList(db.Users.ToList());
+
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************
+
+//************************
+//btnChangeStatus
+
+try
+{
+    if (dgvUsers.Rows.Count  == 0)
+    {
+        return;
+    }
+    int id;
+    id = int.Parse(dgvUsers.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از تغییر وضعیت مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            User user = db.Users.Where(i => i.Id == id).FirstOrDefault();
+			user.IsActive = (User.IsActive == True)? false : true;
+            MessageBoxTool.msg();
+            RefreshUsersListsList(db.Users.ToList());
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************

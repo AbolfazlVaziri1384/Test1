@@ -1,0 +1,185 @@
+//******************************
+// class CheckTool
+
+    DormitoryDbContext db = new DormitoryDbContext();
+	
+//*******************************	
+    public bool UserField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, Long NationalCode , Long Stu_Per_Code , Long Phone , Datetime Birthday , int Gander)
+    {
+        bool Istrue = false;
+        if ((string.IsNullOrWhiteSpace(FirstName)) ||
+            (string.IsNullOrWhiteSpace(LastName)) ||
+            (string.IsNullOrWhiteSpace(UserName)) ||
+            (string.IsNullOrWhiteSpace(Password)) ||
+	    (string.IsNullOrWhiteSpace(ConfirmPassword)) ||
+            (string.IsNullOrWhiteSpace(Address)) ||
+            (string.IsNullOrWhiteSpace(NationalCode)) ||
+            (string.IsNullOrWhiteSpace(Stu_Per_Code.Tostring())) ||
+(Stu_Per_Code == 0)||
+            (string.IsNullOrWhiteSpace(Phone.Tostring())) ||
+(Phone == 0)||
+            (string.IsNullOrWhiteSpace(Gander.Tostring())) ||
+        {
+            MessageBoxTool.msger("تمام فیلد ها باید کامل شوند");
+            return False;
+        }
+        if ((password.Trim() != repeatpassword.Trim()) || (string.IsNullOrWhiteSpace(password)) || (string.IsNullOrWhiteSpace(repeatpassword)))
+        {
+            MessageBoxTool.msger("رمز جدید با تکرار آن مغایرت دارد");
+            return Flase;
+        }
+        // چک کردن نام کاربری که تکراری نباشد
+        bool IsUserNameExist = db.Users.Any(i => i.Username == UserName);
+        if (isUserNameExist)
+        {
+            MessageBoxTool.msger("این نام کاربری قبلا ثبت شده است");
+            return False;
+        }
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool DormitoryField(string Name, string Address, int Capacity)
+    {
+        bool Istrue = false;
+        if ((string.IsNullOrWhiteSpace(Name)) ||
+            (string.IsNullOrWhiteSpace(Address)) ||
+            (Capacity < 0))
+        {
+            MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+            return False;
+        }
+        // چک کردن تکراری نبودن نام خوابگاه
+        bool IsNameExist = db.Dormitories.Any(i => i.Name == Name);
+        if (IsNameExist)
+        {
+            MessageBoxTool.msger("این نام قبلا به خوابگاهی اختصاص داده شده است");
+            return False;
+        }
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool BlockField(string Name,int FloorNumber , int RoomNumber, int Capacity)
+    {
+        bool Istrue = false;
+        if ((string.IsNullOrWhiteSpace(Name)) ||
+            (Capacity < 0) ||
+            (FloorNumber == 0) ||
+            (RoomNumber == 0))
+        {
+            MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+            return False;
+        }
+        // چک تکراری نبودن نام بلوک
+        bool IsNameExist = db.Blocks.Any(i => i.Name == Name);
+        if (IsNameExist)
+        {
+            MessageBoxTool.msger("این نام قبلا به بلوکی اختصاص داده شده است");
+            return False;
+        }
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool RoomField(int FloorNumber , int Number, int Capacity)
+    {
+        bool Istrue = false;
+        if ((Capacity < 0) ||
+            (Capacity > 7) ||
+            (FloorNumber == 0) ||
+            (Number == 0) )
+     
+               {
+            MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+            return False;
+        }
+        // چک تکراری نبودن نام اتاق
+        bool IsExist = db.Rooms.Any(i => i.Number == Number && i.FloorNumber == FloorNumber);
+        if (IsExist)
+        {
+            MessageBoxTool.msger("این نام قبلا به اتاقی اختصاص داده شده است");
+            return False;
+        }
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool RoomAssigmentField(long StudentId)
+    {
+        bool Istrue = false;
+        if (StudentId == 0)
+     
+               {
+            MessageBoxTool.msger("دانشجویی انتخاب نشده است");
+            return False;
+        }
+        
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool SetRoleField(long UserId)
+    {
+        bool Istrue = false;
+        if (UserId == 0)
+     
+               {
+            MessageBoxTool.msger("فردی انتخاب نشده است");
+            return False;
+        }
+        
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool StudentAssetsField(string Name,string Discription)
+    {
+        bool Istrue = false;
+        if ((string.IsNullOrWhiteSpace(Name)) ||
+			(string.IsNullOrWhiteSpace(Discription)) 
+            )
+        {
+            MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+            return False;
+        }
+
+        return True;
+    }
+//**************************
+
+//*******************************	
+    public bool SetTransferStudentAssetsField(long StudentId)
+    {
+        bool Istrue = false;
+        if (StudentId == 0)
+     
+               {
+            MessageBoxTool.msger("فردی انتخاب نشده است");
+            return False;
+        }
+        
+        return True;
+    }
+//**************************
+//*******************************	
+    public bool RepairField(string Discription,string cmbStatus)
+    {
+        bool Istrue = false;
+        if ((string.IsNullOrWhiteSpace(cmbStatus)) ||
+			(string.IsNullOrWhiteSpace(Discription)) 
+            )
+        {
+            MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+            return False;
+        }
+
+        return True;
+    }
+//**************************

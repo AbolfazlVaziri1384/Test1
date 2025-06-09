@@ -1,0 +1,128 @@
+
+	    DormitoryDbContext db = new DormitoryDbContext();
+	    Role role = new Role();
+		//-1 یعنی ما می خواهیم یک مدی را ثبت کنیم
+		long Dormitory_BlockId = -1;
+		bool IsDormitory = flase;
+//**********************************
+
+//******************************
+//دکمه اصلی
+            try
+            {
+bool Istrue ;
+if (dgvStudent.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvUsers.CurrentRow.Cells[0].Value.ToString());
+Isture = CheckTool.SetRoleField(id);
+// اگر مدیرا را می خواهیم اضافه کنیم باید -1 باشد 
+//اگر مسئول خوایگاه باشد بولین فعال می شود
+// برای بلوک هم ..........
+// modify هم زمانی تغییر میکنه که ما حذف داشته  باشیم 
+// همه در هنگامی که ثبت می کنند خودشان را آیا نیاز است که دانشجو بشوند ؟
+								if(RoomEditId == -1)
+								{
+								if (Istrue == true)
+												{
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								////creat ها حتما پر شوند !!!
+
+											db.RoomAssigments.Add(assigment);
+											db.SaveChanges();
+													MessageBoxTool.msgr("اتاق با موفقیت اختصاص داده شد");
+													Close();
+								}
+								else
+								{
+								if (Istrue == true)
+												{
+								DialogResult result;
+										result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+										if (result == DialogResult.Yes)
+										{
+										
+										assigment = db.RoomAssigments.find(i => i.Id == RoomAssigmentEditId).firstordefult();
+
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								assigment.FirstName = FirstName.text;
+								//modify ها حتما پر شوند !!!
+								//بربرای کدام اتاق داری ثبت می کنی ؟؟
+								db.SaveChanges();
+													MessageBoxTool.msgr("خوابگاه با موفقیت ویرایش شد");
+													Close();
+													}
+								}
+								}
+                
+                
+                }
+                            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
+        }
+
+
+
+//*************************** باید درست شود
+// data grid view
+
+Private void RefreshStudentsList(List<Users> Studentslist)
+{
+    dgvStudents.Rows.Clear();
+    List<Users> Lst = new List<Users>();
+    foreach (var item in Studentslist)
+    {
+// باید نقشش هم دانشجو باشد!!
+        if (item.CreatBy == ) && (item.IsDeleted == false)&& (db.RoomAssigments.Any(i => i.StudentId == item.Id) == flase)
+        {
+            dgvDormitories.Rows.Add(item.Id.ToString(),
+                                   item.FirstName,
+                                   item.LastName,
+                                   item.Stu_Per_Code.ToString(),
+                                   item.NationalCode.ToString());
+        }
+
+    }
+    
+    
+}
+
+//*******************************
+
+//*******************************باید درست شود
+//textsearch
+
+try
+{
+    RefreshStudentsList((List<Users>)db.Users.Where(i => i.FirstName.contain() == txtSearch.text.Trim() || 
+													   i.LastName.contain() == txtSearch.text.Trim() ||
+													   i.Stu_Per_Code.contain() == txtSearch.text.Trim() ||
+													   i.NationalCode.contain() == txtSearch.text.Trim() ).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************

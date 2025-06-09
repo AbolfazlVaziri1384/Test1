@@ -1,0 +1,248 @@
+//******************************
+// بالای صفحه 
+	Roles role = new Roles();
+//*******************************
+
+//***************
+//هنگام لود صفحه
+
+string name = ((user.gender == 0)? "" : "") + user.Firstame + user.LastName;
+frmDormitory.text = string.format("خوابگاه هایی با مدیریت {0}" , name);
+
+//*****************
+
+//***************************
+// data grid view
+
+Private void RefreshDormitoriesList(List<Dormitories> Dormitorieslist)
+{
+    dgvDormitories.Rows.Clear();
+    List<Dormitories> Lst = new List<Dormitories>();
+    foreach (var item in Dormitorieslist)
+    {
+	//پیدا کردن نام مسئول 
+	long? OwenerId = db.Roles.Where(i => i.DormitoryId == item.Id).FirstOrDifult().UserId;
+	string name;
+	if (OwenerId != Null)
+{							
+	User user =  db.Users.Where(i => i.Id == UserId).FirstOrDifult();
+	name = ((user.gender == 0)? "" : "") + user.Firstame + user.LastName; 
+}
+else
+{
+name = "مسئولی انتخاب نشده است";
+}
+	///********** اگر مدیر بود همه خوابگاه ها و اگر نه خوابگاه های ثبت شده توسط همان فرد
+        if (item.CreatBy == ) && (item.IsDeleted == false) && (db.Users.Where(i => i.Id == item.CreatBy).FirstOrDifult().IsDeleted == flase)
+        {
+            dgvDormitories.Rows.Add(item.Id.ToString(),
+                                   item.Name,
+								   name,
+                                   item.Capacity.ToString("N0"),
+								   item.CreatOn,
+								   item.CreatBy,
+								   item.ModifiedOn,
+								   item.Address);
+								   
+        }
+
+    }
+    //Color هر وقت کسی را ثبت می کنی برایاتتاقی باید از ظرفیت خوابگاه کم شود و حر  وقت حذف می کنی باید به ظرفیت اضافه شود تا این مورد به درست ی کار کند
+	if (dataGridView2.Rows.Count != 0)
+            {
+			foreach (DataGridViewRow row in dataGridView2.Rows)
+			{
+	// برای زمانی که طرفیت خوابگاه صفر شود
+if (row.Cells[3].Value.ToString() == "0")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+				else if (row.Cells[2].Value.ToString() == "مسئولی انتخاب نشده است")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Blue;
+                }
+				}
+			}
+    
+}
+
+//*******************************
+
+//*******************************
+//textsearch
+
+try
+{
+    RefreshDormitoriesListsList((List<Dormitories>)db.Dormitories.Where(i => i.Name.contain() == txtSearch.text.Trim()).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************
+
+//******************
+//btnEdit
+
+try
+{
+    if (dgvDormitories.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvDormitories.CurrentRow.Cells[0].Value.ToString());
+    frmSetDormitory frm = new frmSetDormitory();
+    frm.DormitoryEditId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//************************
+//btnDelete
+
+try
+{
+    if (dgvDormitories.Rows.Count  == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvDormitories.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            Dormitories dor = db.Dormitories.Where(i => i.Id == id).FirstOrDefault();
+			dor.IsDeleted = true;
+			//*************
+			dor.DeletedBy = true;
+			dor.DeletedTime = DateTime.now();
+            MessageBoxTool.msg();
+            RefreshDormitoriesListList(db.Dormitories.ToList());
+
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************
+
+//*****************************
+//btnAdd dor
+
+try
+{
+frmSetDormitory frm = new frmSetDormitory();
+frm.ShowDialog();
+RefreshDormitoriesListsList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//*****************************
+//btnAdd block
+
+try
+{
+frmSetDormitory frm = new frmSetDormitory();
+frm.ShowDialog();
+// RefreshDormitoriesListsList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//******************
+//btnAddOwner
+
+try
+{
+    if (dgvDormitories.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvDormitories.CurrentRow.Cells[0].Value.ToString());
+    frmSetRole frm = new frmSetRole();
+    frm.DormitoryId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//******************
+//btnDeleteOwner
+
+try
+{
+    if (dgvDormitories.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvDormitories.CurrentRow.Cells[0].Value.ToString());
+	var Owener = db.Roles.Where(i => i.DormitoryId == id).FirstOrDifult();
+	Owener.DormitoryId = null;
+	///آیا برای فیلد نقشش باید کاری کرد
+	db.Savechange();
+    db = new DormitoryDbContext();
+    RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//******************
+//btnShowBlock
+
+try
+{
+    if (dgvDormitories.Rows.Count == 0)
+    {
+        return;
+    }
+    int id;
+    id = int.Parse(dgvDormitories.CurrentRow.Cells[0].Value.ToString());
+    frmBlock frm = new frmBlock();
+    frm.DormitoryId = id;
+    frm.ShowDialog();
+    //db = new DormitoryDbContext();
+    //RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************

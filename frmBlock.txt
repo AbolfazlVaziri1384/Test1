@@ -1,0 +1,260 @@
+//******************************
+// بالای صفحه 
+	Roles role = new Roles();
+//*******************************
+
+//***************
+//هنگام لود صفحه
+long DormitoryId;
+
+long? Id =  db.Roles.Where(i => i.DormitoryId == DormitoryId).FirstOrDifult().UserId;
+string DormitoryName = db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault().Name;
+
+if (Id != null)
+{
+var Owener = db.Users.Where(i => i.Id == Id).Select(d => d.Firstame , d.LastName , d.gender).FirstOrDefault();
+string name = ((Owener.gender == 0)? "" : "") + Owener.Firstame + Owener.LastName;
+frmDormitory.text = string.format("بلوک های خوابگاه {0} با مدیریت {1} " , DormitoryName , name);
+}
+else 
+{
+frmDormitory.text = string.format("!بلوک های خوابگاه {0} بدون مدیر" , DormitoryName);
+}
+
+//*****************
+
+//***************************
+// data grid view
+
+Private void RefreshBlocksList(List<Blocks> Blockslist)
+{
+    dgvBlocks.Rows.Clear();
+    List<Blocks> Lst = new List<Blocks>();
+    foreach (var item in Blockslist)
+    {
+	//پیدا کردن نام مسئول 
+	long? OwenerId = db.Roles.Where(i => i.BlockId == item.Id).FirstOrDifult().UserId;
+	string name;
+	if (OwenerId != Null)
+{							
+	User user =  db.Users.Where(i => i.Id == UserId).Select(d => d.Firstame , d.LastName , d.gender).FirstOrDifult();
+	name = ((user.gender == 0)? "آقا" : "خانم") + user.FirstName + user.LastName; 
+}
+else
+{
+name = "مسئولی انتخاب نشده است";
+}
+        if (item.CreatBy == ) && (item.IsDeleted == false) && (db.Users.Where(i => i.Id == item.CreatBy).FirstOrDifult().IsDeleted == flase) && (item.DormitoryId == DormitoryId)
+        {
+            dgvDormitories.Rows.Add(item.Id.ToString(),
+                                   item.Name,
+								   name,
+                                   item.FloorNumber.ToString("N0"),
+                                   item.RoomNumber.ToString("N0"),
+                                   item.Capacity.ToString("N0"),
+								   item.CreatOn,
+								   item.CreatBy,
+								   item.ModifiedOn);
+								   
+        }
+
+    }
+    //Color هر وقت کسی را ثبت می کنی برایاتتاقی باید از ظرفیت خوابگاه کم شود و حر  وقت حذف می کنی باید به ظرفیت اضافه شود تا این مورد به درست ی کار کند
+	if (dataGridView2.Rows.Count != 0)
+            {
+			foreach (DataGridViewRow row in dataGridView2.Rows)
+			{
+	// برای زمانی که طرفیت خوابگاه صفر شود
+if (row.Cells[5].Value.ToString() == "0")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+				else if (row.Cells[2].Value.ToString() == "مسئولی انتخاب نشده است")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Blue;
+                }
+				}
+			}
+    
+}
+
+//*******************************
+
+//*******************************
+//textsearch
+
+try
+{
+    RefreshBlocksListListsList((List<Blocks>)db.Blocks.Where(i => i.Name.contain() == txtSearch.text.Trim()).ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//*****************************
+
+//******************
+//btnEdit
+
+try
+{
+    if (dgvBlocks.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+    frmSetBlock frm = new frmSetBlock();
+    frm.BlockEditId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshBlocksListListList(db.Blocks.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//************************
+//btnDelete
+
+try
+{
+    if (dgvBlocks.Rows.Count  == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            Blocks block = db.Blocks.Where(i => i.Id == id).FirstOrDefault();
+			block.IsDeleted = true;
+			//*************
+			block.DeletedBy = true;
+			block.DeletedTime = DateTime.now();
+            MessageBoxTool.msg();
+            RefreshBlocksListListList(db.Blocks.ToList());
+
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************
+
+//*****************************
+//btnSetBlock
+
+try
+{
+frmSetBlock frm = new frmSetBlock();
+frm.ShowDialog();
+RefreshBlocksListListsList(db.Blocks.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//*****************************
+//btnSetRoom
+
+try
+{
+frmSetRoom frm = new frmSetRoom();
+frm.ShowDialog();
+// RefreshDormitoriesListsList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+
+//******************
+//btnAddOwner
+
+try
+{
+    if (dgvBlocks.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+    frmSetRole frm = new frmSetRole();
+    frm.BlockId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshBlocksListListList(db.Blocks.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//******************
+//btnDeleteOwner
+
+try
+{
+    if (dgvBlocks.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+	var Owener = db.Roles.Where(i => i.BlockId == id).FirstOrDifult();
+	Owener.BlockId = null;
+	///آیا برای فیلد نقشش باید کاری کرد
+	db.Savechange();
+    db = new DormitoryDbContext();
+    RefreshBlocksListListList(db.Blocks.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//******************
+//btnShowRoom
+
+try
+{
+    if (dgvBlocks.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+    frmRoom frm = new frmRoom();
+    frm.BlockId = id;
+    frm.ShowDialog();
+    //db = new DormitoryDbContext();
+    //RefreshDormitoriesListList(db.Dormitories.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************

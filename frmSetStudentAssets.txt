@@ -1,0 +1,82 @@
+
+	    DormitoryDbContext db = new DormitoryDbContext();
+	    StudentAssets sa = new StudentAssets();
+		long StudentAssetsEditId = -1;
+
+//**********************************
+// هنگام لود کردن صفحه
+
+
+if(BlockEditId != -1)
+{
+btnSave.text = "ویرایش";
+frmSetBlock.text = "صفحه ویرایش";
+var EditStudentAssets  = db.StudentAssets.find(i => i.Id == StudentAssetsEditId).firstordefult();
+// پر کردن فیلد ها
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+}
+else
+{
+//****
+//lblGuid
+string GenerateTimeBasedSerial()
+{
+    DateTime now = DateTime.Now;
+    return $"{now:yyyyMMddHHmmssfff}-{Guid.NewGuid().ToString().Substring(0, 4)}";
+}
+
+string serial = GenerateTimeBasedSerial();
+Console.WriteLine("Time-based Serial: " + serial);
+//****
+}
+//*********************************
+
+//******************************
+//دکمه اصلی
+            try
+            {
+bool Istrue ;
+Isture = CheckTool.RepairField(txtDiscription.Text, cmbstatus.value);
+if (Istrue == true)
+                {
+				DialogResult result;
+        result = MessageBoxTool.msgq("آیا از این درخواست مطمئن هستید؟");
+        if (result == DialogResult.Yes)
+        {
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+////creat ها حتما پر شوند !!!
+
+            db.StudentAssets.Add(block);
+            db.SaveChanges();
+                    MessageBoxTool.msgr("وسیله با موفقیت ثبت شد");
+                    Close();
+}}
+
+}
+                
+                
+                }
+                            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
+        }
+

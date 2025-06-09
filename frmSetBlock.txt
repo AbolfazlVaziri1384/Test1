@@ -1,0 +1,89 @@
+
+	    DormitoryDbContext db = new DormitoryDbContext();
+	    Blocks block = new Blocks();
+		long BlockEditId = -1;
+
+//**********************************
+// هنگام لود کردن صفحه
+if(BlockEditId != -1)
+{
+btnSave.text = "ویرایش";
+frmSetBlock.text = "صفحه ویرایش";
+var EditBlock  = db.Blocks.find(i => i.Id == BlockEditId).firstordefult();
+// پر کردن فیلد ها
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+}
+//*********************************
+
+//******************************
+//دکمه اصلی
+            try
+            {
+bool Istrue ;
+Isture = CheckTool.إlockField(txtName.Text, numFloorNumber.value , numRoomNumber.value , numCapasity.value);
+if(BlockEditId == -1)
+{
+if (Istrue == true)
+                {
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+////creat ها حتما پر شوند !!!
+
+            db.Blocks.Add(block);
+            db.SaveChanges();
+                    MessageBoxTool.msgr("خوابگاه با موفقیت ثبت شد");
+                    Close();
+}
+else
+{
+if (Istrue == true)
+                {
+DialogResult result;
+        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+        if (result == DialogResult.Yes)
+        {
+		
+		block = db.Blocks.find(i => i.Id == BlockEditId).firstordefult();
+
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+block.FirstName = FirstName.text;
+//modify ها حتما پر شوند !!!
+//برای کدام خوایگاه داری این را ثبت می کنی؟؟
+db.SaveChanges();
+                    MessageBoxTool.msgr("خوابگاه با موفقیت ویرایش شد");
+                    Close();
+					}
+}
+}
+                
+                
+                }
+                            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
+        }
+

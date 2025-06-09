@@ -1,0 +1,201 @@
+//******************************
+// بالای صفحه 
+	//Roles role = new Roles();
+//*******************************
+
+//***************
+//هنگام لود صفحه
+long StudentId;
+//User user = db.Users.Where(i => i.Id == StudentId).FirstOrDefault();
+//بدست آوردن اتاق فرد
+	var room = db.RoomAssigments.Where(i => i.StudentId == StudentId).FirstOrDefault();
+//*****************
+
+//***************************
+// data grid view StudentAssets
+
+Private void RefreshStudentAssetsList(List<StudentAssets> StudentAssetslist)
+{
+    dgvStudentAssets.Rows.Clear();
+    List<StudentAssets> Lst = new List<StudentAssets>();
+    foreach (var item in StudentAssetslist)
+    {
+	var LastOwner = db.Users.Where(i => i.Id == item.LastStudentId).FirstOrDefault();
+        if (item.StudentId == StudentId)
+        {
+            dgvStudentAssets.Rows.Add(item.Id.ToString(),
+                                   item.Name,
+								   item.Guid,
+								   if(LastOwner != null)LastOwner.FirstName + " " + LastOwner.LastName
+								   else null,
+								   //***************
+								   item.transfaredate,
+								   item.Discription
+                                   );
+								   
+        }
+
+    }
+	if (dataGridView2.Rows.Count != 0)
+            {
+			foreach (DataGridViewRow row in dataGridView2.Rows)
+			{
+if (row.Cells[3].Value.ToString() != null)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Blue;
+                }
+				
+				}
+			}
+    
+}
+
+//*******************************
+
+//***************************
+// data grid view RoomAssets
+
+Private void RefreshRoomAssetsList(List<TransferRoomAssetsHistory> RoomAssetslist)
+{
+    dgvRoomAssets.Rows.Clear();
+    List<RoomAssets> Lst = new List<RoomAssets>();
+    foreach (var item in RoomAssetslist)
+    {
+	var LastRoom = db.Rooms.Where(i => i.Id == item.LastRoomId).FirstOrDefault();
+	var RoomAsset = db.RoomAssets.Where(i => i.Id == item.RoomAssetId).FirstOrDefault();
+        if (item.StudentId == StudentId) || (item.RoomId == room.Id)
+        {
+            dgvStudentAssets.Rows.Add(item.Id.ToString(),
+                                   RoomAsset.PartNumber,
+                                   RoomAsset.AssetNumber,
+                                   RoomAsset.Status,
+								   LastRoom.Number,
+                                   );
+								   
+        }
+
+    }
+	
+    
+}
+
+//*******************************
+
+//no text to search
+
+
+//******************
+//btnEdit
+
+try
+{
+    if (dgvStudentAssets.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvStudentAssets.CurrentRow.Cells[0].Value.ToString());
+    frmSetStudentAssets frm = new frmSetStudentAssets();
+    frm.StudentAssetsEditId = id;
+    frm.ShowDialog();
+    db = new DormitoryDbContext();
+    RefreshStudentAssetsList(db.StudentAssets.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//************************
+
+//************************
+//btnDelete
+
+try
+{
+    if (dgvStudentAssets.Rows.Count  == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvStudentAssets.CurrentRow.Cells[0].Value.ToString());
+    if (id != 0)
+    {
+        DialogResult result;
+        result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+        if (result == DialogResult.Yes)
+        {
+            StudentAssets sa = db.StudentAssets.Where(i => i.Id == id).FirstOrDefault();
+			db.Remove(sa);
+			db.Savechange();
+            MessageBoxTool.msg();
+            RefreshBlocksListListList(db.StudentAssets.ToList());
+
+        }
+    }
+
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//********************************************
+
+//*****************************
+//btnSetStudentAssets
+
+try
+{
+frmSetStudentAssets frm = new frmSetStudentAssets();
+frm.ShowDialog();
+RefreshStudentAssetsList(db.StudentAssets.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+//*****************************
+//btnSetTransfer
+
+try
+{
+if (dgvStudentAssets.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvStudentAssets.CurrentRow.Cells[0].Value.ToString());
+frmSetTransferStudentAssets frm = new frmSetTransferStudentAssets();
+frm.ShowDialog();
+RefreshStudentAssetsList(db.StudentAssets.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************
+//*****************************
+//btnRoomRepairAsset
+
+try
+{
+if (dgvStudentAssets.Rows.Count == 0)
+    {
+        return;
+    }
+    long id;
+    id = long.Parse(dgvStudentAssets.CurrentRow.Cells[0].Value.ToString());
+frmSetRoomRepairAsset frm = new frmSetRoomRepairAsset();
+frm.ShowDialog();
+RefreshStudentAssetsList(db.StudentAssets.ToList());
+}
+catch (Exception ex)
+{
+    MessageBoxTool.msger(ex.ToString());
+}
+
+//******************

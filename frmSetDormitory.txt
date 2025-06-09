@@ -1,0 +1,87 @@
+
+	    DormitoryDbContext db = new DormitoryDbContext();
+	    Dormitories dormitory = new Dormitories();
+		int DormitoryEditId = -1;
+
+//**********************************
+// هنگام لود کردن صفحه
+if(DormitoryEditId != -1)
+{
+btnSave.text = "ویرایش";
+frmSetDormitory.text = "صفحه ویرایش";
+var EditDormitory  = db.Dormitories.find(i => i.Id == DormitoryEditId).firstordefult();
+// پر کردن فیلد ها
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+}
+//*********************************
+
+//******************************
+//دکمه اصلی
+            try
+            {
+bool Istrue ;
+Isture = CheckTool.DormitoryField(txtName.Text, txtAddress.Text, numCapasity.value);
+if(DormitoryEditId == -1)
+{
+if (Istrue == true)
+                {
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+////creat ها حتما پر شوند !!!
+            db.Dormitories.Add(dormitory);
+            db.SaveChanges();
+                    MessageBoxTool.msgr("خوابگاه با موفقیت ثبت شد");
+                    Close();
+}
+else
+{
+if (Istrue == true)
+                {
+DialogResult result;
+        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+        if (result == DialogResult.Yes)
+        {
+		
+		dormitory = db.Dormitories.find(i => i.Id == DormitoryEditId).firstordefult();
+
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+dormitory.FirstName = FirstName.text;
+//modify ها حتما پر شوند !!!
+db.SaveChanges();
+                    MessageBoxTool.msgr("خوابگاه با موفقیت ویرایش شد");
+                    Close();
+					}
+}
+}
+                
+                
+                }
+                            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
+        }
+

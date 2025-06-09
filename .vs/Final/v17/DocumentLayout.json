@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\pdf\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\nerdsproject\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForgotPasswordForm.cs",
+              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
+              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "RelativeToolTip": "Final\\ForgotPasswordForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwDMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:08:43.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPasswordForm.cs [Design]",
+              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs",
+              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
+              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\ForgotPasswordForm.cs [Design]",
+              "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:06:59.766Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
+              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
+              "RelativeToolTip": "Final\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T10:23:09.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\User.cs",
+              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\Models\\User.cs",
+              "RelativeToolTip": "Final\\Models\\User.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA/wFQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:57:32.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
+              "ToolTip": "D:\\\u062F\u0627\u0646\u0634\u06AF\u0627\u0647\\PDF\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0633\u0627\u0632\u06CC \u067E\u06CC\u0634\u0631\u0641\u062A\u0647\\NerdsProject\\Final\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Final\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T09:17:19.516Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
