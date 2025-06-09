@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="btnSetRoomAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmBlock.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmDormitory.cs">
@@ -10,7 +16,49 @@
     <Compile Update="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmRepairRoomAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRepairRoomAssetsRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRoomAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRoomAssigment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetDormitory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetRoomAssigment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetStudentAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetTransferStudentAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmSetUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmStudentAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmTransferRoomAssetHistory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmUser.cs">
