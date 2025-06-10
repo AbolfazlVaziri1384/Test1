@@ -16,7 +16,7 @@ namespace Final.Classes
         public Dorms()
         {
             BlockList = new List<Blocks>();
-            int x = 2;
+            int x = 2;int x = 2;
 
         }
     }
