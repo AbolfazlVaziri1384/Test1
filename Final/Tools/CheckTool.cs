@@ -23,7 +23,8 @@ namespace Final.Tools
                 (string.IsNullOrWhiteSpace(Stu_Per_Code.ToString())) ||
                 (Stu_Per_Code == 0) ||
                 (string.IsNullOrWhiteSpace(Phone.ToString())) ||
-                (Phone == 0))
+                (Phone == 0) ||
+                (Birthday != "    /  /  "))
             {
                 MessageBoxTool.msger("تمام فیلد ها باید کامل شوند");
                 return false;
