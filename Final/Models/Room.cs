@@ -47,4 +47,9 @@ public partial class Room
         }
         return count;
     }
+    public static long FindBlockId(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault().BlockId;
+    }
 }
