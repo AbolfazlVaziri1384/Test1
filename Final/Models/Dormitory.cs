@@ -32,4 +32,10 @@ public partial class Dormitory
     public virtual User CreatByNavigation { get; set; } = null!;
 
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
+
+    public static Dormitory? FindDormitoryById(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault();
+    }
 }

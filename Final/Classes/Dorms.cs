@@ -13,11 +13,6 @@ namespace Final.Classes
         public string Capacity { get; set; }
         public string Manager { get; set; }
         public List<Blocks> BlockList { get; set; }
-        public Dorms()
-        {
-            BlockList = new List<Blocks>();
-            int x = 2;int x = 2;
 
-        }
     }
 }

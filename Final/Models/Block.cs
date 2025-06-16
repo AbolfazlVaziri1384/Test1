@@ -38,4 +38,15 @@ public partial class Block
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 
     public virtual ICollection<Room> Rooms { get; set; } = new List<Room>();
+    public static string? FindBlockOwnerName(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var user = User.FindUserById(db.Roles.Where(i => i.BlockId == BlockId).FirstOrDefault().UserId);
+        return (user?.FirstName + " " + user?.LastName) ?? "";
+    }
+    public static Block? FindBlockById(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Blocks.Where(i => i.Id == BlockId).FirstOrDefault();
+    }
 }

@@ -28,4 +28,23 @@ public partial class Role
     public virtual Dormitory? Dermitory { get; set; }
 
     public virtual User User { get; set; } = null!;
+
+    public static long? FindRole(long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var role = db.Roles.FirstOrDefault(i => i.UserId == UserId);
+        return role?.Role1 ?? -1;
+    }
+    public static User? FindDormitoryOwner(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        User? user = User.FindUserById(db.Roles.FirstOrDefault(i => i.DermitoryId == DormitoryId).UserId);
+        return user ?? null;
+    }
+    public static User? FindBlockOwner(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        User? user = User.FindUserById(db.Roles.FirstOrDefault(i => i.BlockId == BlockId).UserId);
+        return user ?? null;
+    }
 }

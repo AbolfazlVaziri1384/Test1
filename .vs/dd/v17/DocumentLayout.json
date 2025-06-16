@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\classes\\dorms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\classes\\dorms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\ssa\\Test1\\final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\models\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Room.cs",
+              "RelativeToolTip": "Final\\Models\\Room.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:13:04.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Block.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Block.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Block.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Block.cs",
+              "RelativeToolTip": "Final\\Models\\Block.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAzwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T09:55:51.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Role.cs",
+              "RelativeToolTip": "Final\\Models\\Role.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIBBwCgAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T09:10:29.463Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -27,15 +90,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dorms.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Classes\\Dorms.cs",
-              "RelativeDocumentMoniker": "Final\\Classes\\Dorms.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Classes\\Dorms.cs",
-              "RelativeToolTip": "Final\\Classes\\Dorms.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Title": "frmRoom.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoom.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRoom.cs",
+              "RelativeToolTip": "Final\\frmRoom.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwGcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T08:16:52.019Z",
+              "WhenOpened": "2025-06-16T09:09:26.083Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmRoom.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoom.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRoom.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T09:09:17.267Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmBlock.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmBlock.cs",
+              "RelativeDocumentMoniker": "Final\\frmBlock.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmBlock.cs",
+              "RelativeToolTip": "Final\\frmBlock.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAzwHoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T20:01:15.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmBlock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmBlock.cs",
+              "RelativeDocumentMoniker": "Final\\frmBlock.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmBlock.cs [Design]",
+              "RelativeToolTip": "Final\\frmBlock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T20:01:06.435Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

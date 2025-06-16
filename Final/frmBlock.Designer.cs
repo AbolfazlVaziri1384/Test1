@@ -44,95 +44,107 @@
             // dgvBlocks
             // 
             dgvBlocks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBlocks.Location = new Point(12, 12);
+            dgvBlocks.Location = new Point(14, 16);
+            dgvBlocks.Margin = new Padding(3, 4, 3, 4);
             dgvBlocks.Name = "dgvBlocks";
-            dgvBlocks.Size = new Size(240, 150);
+            dgvBlocks.RowHeadersWidth = 51;
+            dgvBlocks.Size = new Size(274, 200);
             dgvBlocks.TabIndex = 0;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(343, 25);
+            txtSearch.Location = new Point(392, 33);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(100, 23);
+            txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(368, 91);
+            btnEdit.Location = new Point(421, 121);
+            btnEdit.Margin = new Padding(3, 4, 3, 4);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(75, 23);
+            btnEdit.Size = new Size(86, 31);
             btnEdit.TabIndex = 2;
             btnEdit.Text = "button1";
             btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnPrint
             // 
-            btnPrint.Location = new Point(368, 120);
+            btnPrint.Location = new Point(421, 160);
+            btnPrint.Margin = new Padding(3, 4, 3, 4);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(75, 23);
+            btnPrint.Size = new Size(86, 31);
             btnPrint.TabIndex = 3;
             btnPrint.Text = "button2";
             btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.Click += btnPrint_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(368, 149);
+            btnDelete.Location = new Point(421, 199);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(75, 23);
+            btnDelete.Size = new Size(86, 31);
             btnDelete.TabIndex = 4;
             btnDelete.Text = "button3";
             btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnSetBlock
             // 
-            btnSetBlock.Location = new Point(368, 178);
+            btnSetBlock.Location = new Point(421, 237);
+            btnSetBlock.Margin = new Padding(3, 4, 3, 4);
             btnSetBlock.Name = "btnSetBlock";
-            btnSetBlock.Size = new Size(75, 23);
+            btnSetBlock.Size = new Size(86, 31);
             btnSetBlock.TabIndex = 5;
             btnSetBlock.Text = "button4";
             btnSetBlock.UseVisualStyleBackColor = true;
             // 
             // btnSetRoom
             // 
-            btnSetRoom.Location = new Point(368, 207);
+            btnSetRoom.Location = new Point(421, 276);
+            btnSetRoom.Margin = new Padding(3, 4, 3, 4);
             btnSetRoom.Name = "btnSetRoom";
-            btnSetRoom.Size = new Size(75, 23);
+            btnSetRoom.Size = new Size(86, 31);
             btnSetRoom.TabIndex = 6;
             btnSetRoom.Text = "button5";
             btnSetRoom.UseVisualStyleBackColor = true;
             // 
             // btnAddOwner
             // 
-            btnAddOwner.Location = new Point(368, 236);
+            btnAddOwner.Location = new Point(421, 315);
+            btnAddOwner.Margin = new Padding(3, 4, 3, 4);
             btnAddOwner.Name = "btnAddOwner";
-            btnAddOwner.Size = new Size(75, 23);
+            btnAddOwner.Size = new Size(86, 31);
             btnAddOwner.TabIndex = 7;
             btnAddOwner.Text = "button6";
             btnAddOwner.UseVisualStyleBackColor = true;
             // 
             // btnDeleteOwner
             // 
-            btnDeleteOwner.Location = new Point(368, 265);
+            btnDeleteOwner.Location = new Point(421, 353);
+            btnDeleteOwner.Margin = new Padding(3, 4, 3, 4);
             btnDeleteOwner.Name = "btnDeleteOwner";
-            btnDeleteOwner.Size = new Size(75, 23);
+            btnDeleteOwner.Size = new Size(86, 31);
             btnDeleteOwner.TabIndex = 8;
             btnDeleteOwner.Text = "button7";
             btnDeleteOwner.UseVisualStyleBackColor = true;
             // 
             // btnShowRooms
             // 
-            btnShowRooms.Location = new Point(368, 294);
+            btnShowRooms.Location = new Point(421, 392);
+            btnShowRooms.Margin = new Padding(3, 4, 3, 4);
             btnShowRooms.Name = "btnShowRooms";
-            btnShowRooms.Size = new Size(75, 23);
+            btnShowRooms.Size = new Size(86, 31);
             btnShowRooms.TabIndex = 9;
             btnShowRooms.Text = "button8";
             btnShowRooms.UseVisualStyleBackColor = true;
             // 
             // frmBlock
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnShowRooms);
             Controls.Add(btnDeleteOwner);
             Controls.Add(btnAddOwner);
@@ -143,8 +155,10 @@
             Controls.Add(btnEdit);
             Controls.Add(txtSearch);
             Controls.Add(dgvBlocks);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmBlock";
             Text = "frmBlock";
+            Load += frmBlock_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBlocks).EndInit();
             ResumeLayout(false);
             PerformLayout();
