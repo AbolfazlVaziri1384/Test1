@@ -52,4 +52,9 @@ public partial class Room
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault().BlockId;
     }
+    public static Room FindRoomById(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault();
+    }
 }
