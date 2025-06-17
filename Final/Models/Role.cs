@@ -47,4 +47,46 @@ public partial class Role
         User? user = User.FindUserById(db.Roles.FirstOrDefault(i => i.BlockId == BlockId).UserId);
         return user ?? null;
     }
+    public static bool AnyRole(long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Roles.Any(i => i.UserId == UserId);
+    }
+    public static void SetRole(long UserId, bool IsDormitory, long Dor_Blo_Id, long CreatBy)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Role role = new Role();
+        //مدیر
+        if ((IsDormitory == false) && (Dor_Blo_Id == -1))
+        {
+            role.UserId = UserId;
+            role.Role1 = 1;
+            role.DermitoryId = null;
+            role.BlockId = null;
+            role.CreatBy = UserId;
+            role.CreatOn = DateTime.Now;
+        }
+        //مسئول بلوک
+        else if ((IsDormitory == false) && (Dor_Blo_Id != -1))
+        {
+            role.UserId = UserId;
+            role.Role1 = 3;
+            role.DermitoryId = null;
+            role.BlockId = Dor_Blo_Id;
+            role.CreatBy = UserId;
+            role.CreatOn = DateTime.Now;
+        }
+        //مسئول خوابگاه
+        else if ((IsDormitory == true) && (Dor_Blo_Id != -1))
+        {
+            role.UserId = UserId;
+            role.Role1 = 2;
+            role.DermitoryId = Dor_Blo_Id;
+            role.BlockId = null;
+            role.CreatBy = UserId;
+            role.CreatOn = DateTime.Now;
+        }
+        db.Roles.Add(role);
+        db.SaveChanges();
+    }
 }

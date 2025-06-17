@@ -25,10 +25,6 @@ public partial class Room
 
     public DateTime CreatOn { get; set; }
 
-    public long? ModifiedBy { get; set; }
-
-    public DateTime? ModifiedOn { get; set; }
-
     public virtual Block Block { get; set; } = null!;
 
     public virtual User CreatByNavigation { get; set; } = null!;

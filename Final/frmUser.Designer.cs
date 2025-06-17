@@ -41,41 +41,47 @@
             // dgvUsers
             // 
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(12, 12);
+            dgvUsers.Location = new Point(14, 16);
+            dgvUsers.Margin = new Padding(3, 4, 3, 4);
             dgvUsers.Name = "dgvUsers";
-            dgvUsers.Size = new Size(240, 150);
+            dgvUsers.RowHeadersWidth = 51;
+            dgvUsers.Size = new Size(274, 200);
             dgvUsers.TabIndex = 0;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(338, 33);
+            txtSearch.Location = new Point(386, 44);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(100, 23);
+            txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
             // 
             // btnAddNew
             // 
-            btnAddNew.Location = new Point(386, 415);
+            btnAddNew.Location = new Point(441, 553);
+            btnAddNew.Margin = new Padding(3, 4, 3, 4);
             btnAddNew.Name = "btnAddNew";
-            btnAddNew.Size = new Size(75, 23);
+            btnAddNew.Size = new Size(86, 31);
             btnAddNew.TabIndex = 2;
             btnAddNew.Text = "button1";
             btnAddNew.UseVisualStyleBackColor = true;
             // 
             // btnPrint
             // 
-            btnPrint.Location = new Point(305, 415);
+            btnPrint.Location = new Point(349, 553);
+            btnPrint.Margin = new Padding(3, 4, 3, 4);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(75, 23);
+            btnPrint.Size = new Size(86, 31);
             btnPrint.TabIndex = 3;
             btnPrint.Text = "button2";
             btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(224, 415);
+            btnEdit.Location = new Point(256, 553);
+            btnEdit.Margin = new Padding(3, 4, 3, 4);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(75, 23);
+            btnEdit.Size = new Size(86, 31);
             btnEdit.TabIndex = 4;
             btnEdit.Text = "button3";
             btnEdit.UseVisualStyleBackColor = true;
@@ -83,27 +89,29 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(143, 415);
+            btnDelete.Location = new Point(163, 553);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(75, 23);
+            btnDelete.Size = new Size(86, 31);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "button4";
             btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnChangeStatus
             // 
-            btnChangeStatus.Location = new Point(62, 415);
+            btnChangeStatus.Location = new Point(71, 553);
+            btnChangeStatus.Margin = new Padding(3, 4, 3, 4);
             btnChangeStatus.Name = "btnChangeStatus";
-            btnChangeStatus.Size = new Size(75, 23);
+            btnChangeStatus.Size = new Size(86, 31);
             btnChangeStatus.TabIndex = 6;
             btnChangeStatus.Text = "button5";
             btnChangeStatus.UseVisualStyleBackColor = true;
             // 
             // frmUser
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnChangeStatus);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
@@ -111,8 +119,10 @@
             Controls.Add(btnAddNew);
             Controls.Add(txtSearch);
             Controls.Add(dgvUsers);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmUser";
             Text = "frmUser";
+            Load += frmUser_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);
             PerformLayout();

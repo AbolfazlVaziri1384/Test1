@@ -21,5 +21,10 @@ namespace Final
         {
 
         }
+
+        private void frmUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
