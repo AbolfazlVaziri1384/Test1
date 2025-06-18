@@ -27,4 +27,14 @@ public partial class StudentAsset
         db.StudentAssets.Remove(db.StudentAssets.Where(i => i.Id == Id).FirstOrDefault());
         db.SaveChanges();
     }
+    public static void SetTransfer(long StudentAssetId, long UserID, long StudentId) 
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        StudentAsset asset = db.StudentAssets.Where(i => i.Id == StudentAssetId).FirstOrDefault();
+        db.StudentAssets.Update(asset);
+        asset.StudentId = StudentId;
+        asset.LastStudentId = UserID;
+        asset.TransferDate = DateTime.Now;
+        db.SaveChanges();
+    }
 }

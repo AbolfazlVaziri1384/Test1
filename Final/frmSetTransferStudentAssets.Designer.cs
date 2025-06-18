@@ -51,6 +51,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // btnSave
             // 
@@ -61,6 +62,7 @@
             btnSave.TabIndex = 2;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmSetTransferStudentAssets
             // 
