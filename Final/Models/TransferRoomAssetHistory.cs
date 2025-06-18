@@ -30,4 +30,15 @@ public partial class TransferRoomAssetHistory
     public virtual RoomAsset RoomAsset { get; set; } = null!;
 
     public virtual User? Student { get; set; }
+
+    public static bool IsInOneRoom(long RoomAssetId, long UserID)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        TransferRoomAssetHistory tra = db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == RoomAssetId).FirstOrDefault();
+        foreach (var x in db.RoomAssigments.Where(i => i.RoomId == tra.RoomId).ToList())
+        { 
+            if(UserID ==  x.StudentId) return true;
+        }
+        return false;
+    }
 }

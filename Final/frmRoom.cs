@@ -105,5 +105,10 @@ namespace Final
             //stiRoomPrint.RegData("DTRoom", dtRoom);
             //stiRoomPrint.Show();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

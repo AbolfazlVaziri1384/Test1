@@ -72,7 +72,7 @@ public partial class User
         DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
     }
-    public static User? FindUserById(long UserId)
+    public static User? FindUserById(long? UserId)
     {
         DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.Id == UserId).FirstOrDefault();
@@ -101,6 +101,10 @@ public partial class User
             user.LastLogin = DateTime.Now;
         }
         db.SaveChanges();
+    }
+    public static string GetFullName(User user)
+    {
+        return ((user.Gender == 1) ? "آقا" : "خانم") + " " + user.FirstName + " " + user.LastName;
     }
     public static void SetUser(string FirstName, string LastName, 
                                string UserName, string Password, 

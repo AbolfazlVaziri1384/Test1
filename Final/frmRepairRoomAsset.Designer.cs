@@ -36,37 +36,42 @@
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
-            cmbStatus.Location = new Point(355, 25);
+            cmbStatus.Location = new Point(406, 33);
+            cmbStatus.Margin = new Padding(3, 4, 3, 4);
             cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(121, 23);
+            cmbStatus.Size = new Size(138, 28);
             cmbStatus.TabIndex = 0;
             // 
             // txtDiscription
             // 
-            txtDiscription.Location = new Point(376, 88);
+            txtDiscription.Location = new Point(430, 117);
+            txtDiscription.Margin = new Padding(3, 4, 3, 4);
             txtDiscription.Name = "txtDiscription";
-            txtDiscription.Size = new Size(100, 23);
+            txtDiscription.Size = new Size(114, 27);
             txtDiscription.TabIndex = 1;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(376, 170);
+            btnSave.Location = new Point(430, 227);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 2;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
             // 
             // frmRepairRoomAsset
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnSave);
             Controls.Add(txtDiscription);
             Controls.Add(cmbStatus);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmRepairRoomAsset";
             Text = "frmRepairRoomAsset";
+            Load += frmRepairRoomAsset_Load;
             ResumeLayout(false);
             PerformLayout();
         }

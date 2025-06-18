@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class frmSetTransferStudentAssets: Form
+    public partial class frmSetTransferStudentAssets : Form
     {
         public frmSetTransferStudentAssets()
         {
             InitializeComponent();
+        }
+        public long UserID;
+        public long StudentAssetId;
+        private void frmSetTransferStudentAssets_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,37 +37,43 @@
             // dgvStudents
             // 
             dgvStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStudents.Location = new Point(12, 12);
+            dgvStudents.Location = new Point(14, 16);
+            dgvStudents.Margin = new Padding(3, 4, 3, 4);
             dgvStudents.Name = "dgvStudents";
-            dgvStudents.Size = new Size(240, 150);
+            dgvStudents.RowHeadersWidth = 51;
+            dgvStudents.Size = new Size(274, 200);
             dgvStudents.TabIndex = 0;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(381, 66);
+            txtSearch.Location = new Point(435, 88);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(100, 23);
+            txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(406, 121);
+            btnSave.Location = new Point(464, 161);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 2;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
             // 
             // frmSetTransferStudentAssets
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnSave);
             Controls.Add(txtSearch);
             Controls.Add(dgvStudents);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmSetTransferStudentAssets";
             Text = "frmSetTransferStudentAssets";
+            Load += frmSetTransferStudentAssets_Load;
             ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();
             ResumeLayout(false);
             PerformLayout();

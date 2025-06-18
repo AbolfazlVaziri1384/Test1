@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class frmSetStudentAssets: Form
+    public partial class frmSetStudentAssets : Form
     {
         public frmSetStudentAssets()
         {
             InitializeComponent();
+        }
+        public long UserID;
+        private void frmSetStudentAssets_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

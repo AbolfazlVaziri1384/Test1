@@ -56,6 +56,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // btnSetRoomAssigment
             // 

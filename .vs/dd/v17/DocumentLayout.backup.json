@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetroomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetroomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\frmrepairroomassetsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomassetsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\ssa\\test1\\final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\ssa\\Test1\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,44 +37,6 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmSetRoomAssigment.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRoomAssigment.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRoomAssigment.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRoomAssigment.cs",
-              "RelativeToolTip": "Final\\frmSetRoomAssigment.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAIA0wFcAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T12:48:26.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmSetRoomAssigment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRoomAssigment.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRoomAssigment.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRoomAssigment.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetRoomAssigment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T12:48:25.058Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "Final\\Models\\Role.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Role.cs",
-              "RelativeToolTip": "Final\\Models\\Role.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA/wFgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:40:06.845Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -84,40 +46,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "Final\\Models\\Room.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\Models\\Room.cs",
-              "RelativeToolTip": "Final\\Models\\Room.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwBkAAAApAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmRepairRoomAsset.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAsset.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAsset.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAsset.cs",
+              "RelativeToolTip": "Final\\frmRepairRoomAsset.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAjwBMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:37:00.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmSetRole.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRole.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRole.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRole.cs",
-              "RelativeToolTip": "Final\\frmSetRole.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:33:19.022Z",
+              "WhenOpened": "2025-06-18T03:58:59.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frmSetRole.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRole.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRole.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetRole.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetRole.cs [Design]",
+              "Title": "frmRepairRoomAssetsRequest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAssetsRequest.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAssetsRequest.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAssetsRequest.cs [Design]",
+              "RelativeToolTip": "Final\\frmRepairRoomAssetsRequest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T10:33:14.678Z",
+              "WhenOpened": "2025-06-18T03:58:23.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmRepairRoomAsset.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAsset.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAsset.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmRepairRoomAsset.cs [Design]",
+              "RelativeToolTip": "Final\\frmRepairRoomAsset.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:58:13.487Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmSetStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmSetStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetStudentAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:49:20.88Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmStudentAssets.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmStudentAssets.cs",
+              "RelativeToolTip": "Final\\frmStudentAssets.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAiwMMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:48:59.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\ssa\\Test1\\Final\\frmStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmStudentAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:25:58.833Z",
               "EditorCaption": " [Design]"
             }
           ]
