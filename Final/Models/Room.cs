@@ -22,6 +22,9 @@ public partial class Room
     public DateTime? DeletedOn { get; set; }
 
     public long CreatBy { get; set; }
+    public long ModifiedBy { get; set; }
+    public DateTime? ModifiedOn { get; set; }
+
 
     public DateTime CreatOn { get; set; }
 

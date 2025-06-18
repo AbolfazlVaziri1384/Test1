@@ -58,7 +58,7 @@
     <Compile Update="frmStudentAssets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmTransferRoomAssetHistory.cs">
+    <Compile Update="frmSetTransferRoomAssetHistory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmUser.cs">

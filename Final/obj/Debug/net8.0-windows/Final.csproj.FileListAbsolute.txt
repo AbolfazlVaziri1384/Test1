@@ -435,7 +435,6 @@ C:\Users\Asus\Desktop\ssa\Test1\Final\bin\Debug\net8.0-windows\runtimes\win-x86\
 C:\Users\Asus\Desktop\ssa\Test1\Final\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Asus\Desktop\ssa\Test1\Final\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.csproj.AssemblyReference.cache
-C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.btnSetRoomAssets.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.ForgotPasswordForm.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmBlock.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmDormitory.resources
@@ -454,7 +453,6 @@ C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmSetStude
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmSetTransferStudentAssets.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmSetUser.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmStudentAssets.resources
-C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmTransferRoomAssetHistory.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmUser.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.LoginForm.resources
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.Properties.Resources.resources
@@ -470,3 +468,5 @@ C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\refint\Final.dll
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.pdb
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.genruntimeconfig.cache
 C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\ref\Final.dll
+C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmSetRoomAssets.resources
+C:\Users\Asus\Desktop\ssa\Test1\Final\obj\Debug\net8.0-windows\Final.frmSetTransferRoomAssetHistory.resources

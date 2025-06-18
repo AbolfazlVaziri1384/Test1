@@ -190,7 +190,7 @@ namespace Final
             }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
-            frmSetRoomAssets frm = new frmSetRoomAssets();
+            frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
             frm.UserID = UserID;
             frm.RoomAssetID = id;
             frm.ShowDialog();
@@ -221,7 +221,7 @@ namespace Final
             }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
-            frmTransferRoomAssetHistory frm = new frmTransferRoomAssetHistory();
+            frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
             frm.UserID = UserID;
             frm.RoomAssetID = id;
             frm.ShowDialog();

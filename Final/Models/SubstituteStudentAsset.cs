@@ -9,9 +9,10 @@ public partial class SubstituteStudentAsset
 
     public long StudentId { get; set; }
 
-    public long LastRoomAssetId { get; set; }
+    public long? LastRoomAssetId { get; set; }
 
     public long NewRoomAssetId { get; set; }
+    public int PartNumber { get; set; }
 
     public virtual RoomAsset LastRoomAsset { get; set; } = null!;
 

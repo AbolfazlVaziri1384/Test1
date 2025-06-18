@@ -14,6 +14,5 @@ namespace Final.Classes
         public string IsActive { get; set; }
         public Rooms Room { get; set; }
         public Student Owner { get; set; }
-        public int x;
     }
 }

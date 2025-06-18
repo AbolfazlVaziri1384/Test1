@@ -1,6 +1,6 @@
 ﻿namespace Final
 {
-    partial class frmTransferRoomAssetHistory
+    partial class frmSetTransferRoomAssetHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // btnSave
             // 
@@ -63,7 +64,7 @@
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
-            // frmTransferRoomAssetHistory
+            // frmSetTransferRoomAssetHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -72,9 +73,9 @@
             Controls.Add(txtSearch);
             Controls.Add(dgvOwner);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "frmTransferRoomAssetHistory";
-            Text = "frmTransferRoomAssetHistory";
-            Load += frmTransferRoomAssetHistory_Load;
+            Name = "frmSetTransferRoomAssetHistory";
+            Text = "frmSetTransferRoomAssetHistory";
+            Load += frmSetTransferRoomAssetHistory_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOwner).EndInit();
             ResumeLayout(false);
             PerformLayout();
