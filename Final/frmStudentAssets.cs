@@ -75,8 +75,7 @@ namespace Final
                     dgvRoomAssets.Rows.Add(item.Id.ToString(),
                                             item.RoomAsset.PartNumber,
                                             item.RoomAsset.AssetNumber,
-                                            // وضعیت هابه چه نوحوی ثبت می شوند ؟؟
-                                            item.RoomAsset.Status,
+                                            (item.RoomAsset.Status == (int)EnumTool.Status.Intact)? "سالم" : "معیوب",
                                             HDateTimeTool.ToHDateTime(item.CreatOn),
                                             Models.User.GetFullName(Models.User.FindUserById(item.CreatBy)));
                 }

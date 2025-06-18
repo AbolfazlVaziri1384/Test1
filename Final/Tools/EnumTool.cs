@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Final.Tools
 {
-    internal class RoleTool
+    internal class EnumTool
     {
         public enum Role : byte
         {
@@ -14,6 +14,11 @@ namespace Final.Tools
             Manager = 1,
             DormitoryOwner = 2,
             BlockOwner = 3
+        }
+        public enum Status : byte
+        {
+            Intact = 0,
+            Defective = 1
         }
     }
 }

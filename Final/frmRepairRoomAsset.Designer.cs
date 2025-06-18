@@ -36,6 +36,7 @@
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
+            cmbStatus.Items.AddRange(new object[] { "سالم", "معیوب" });
             cmbStatus.Location = new Point(406, 33);
             cmbStatus.Margin = new Padding(3, 4, 3, 4);
             cmbStatus.Name = "cmbStatus";
@@ -59,6 +60,7 @@
             btnSave.TabIndex = 2;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmRepairRoomAsset
             // 

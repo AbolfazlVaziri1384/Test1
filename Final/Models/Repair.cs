@@ -10,7 +10,7 @@ public partial class Repair
 
     public long RoomAssetId { get; set; }
 
-    public bool Status { get; set; }
+    public int Status { get; set; }
 
     public string Discription { get; set; } = null!;
 
@@ -20,4 +20,18 @@ public partial class Repair
 
     public virtual RoomAsset RoomAsset { get; set; } = null!;
     public virtual User User { get; set; } = null!;
+
+    public static void SetRepair(long RoomAssetId , int Status , string Discription , long UserID)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Repair repair = new Repair();
+        repair.RoomAssetId = RoomAssetId;
+        repair.Status = Status;
+        repair.Discription = Discription;
+        repair.RequestDate = DateTime.Now;
+        repair.IsRepair = true;
+        repair.UserId = UserID;
+        db.Repairs.Add(repair);
+        db.SaveChanges();
+    }
 }
