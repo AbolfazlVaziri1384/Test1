@@ -1,6 +1,6 @@
 ﻿namespace Final
 {
-    partial class btnSetRoomAssets
+    partial class frmSetRoomAssets
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtAssetNumber = new TextBox();
             cmbPartNumber = new ComboBox();
             cmbStatus = new ComboBox();
             btnSave = new Button();
+            lblAssetNumber = new Label();
             SuspendLayout();
-            // 
-            // txtAssetNumber
-            // 
-            txtAssetNumber.Location = new Point(367, 23);
-            txtAssetNumber.Name = "txtAssetNumber";
-            txtAssetNumber.Size = new Size(100, 23);
-            txtAssetNumber.TabIndex = 0;
             // 
             // cmbPartNumber
             // 
             cmbPartNumber.FormattingEnabled = true;
-            cmbPartNumber.Location = new Point(346, 65);
+            cmbPartNumber.Location = new Point(395, 87);
+            cmbPartNumber.Margin = new Padding(3, 4, 3, 4);
             cmbPartNumber.Name = "cmbPartNumber";
-            cmbPartNumber.Size = new Size(121, 23);
+            cmbPartNumber.Size = new Size(138, 28);
             cmbPartNumber.TabIndex = 1;
             // 
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
-            cmbStatus.Location = new Point(346, 94);
+            cmbStatus.Location = new Point(395, 125);
+            cmbStatus.Margin = new Padding(3, 4, 3, 4);
             cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(121, 23);
+            cmbStatus.Size = new Size(138, 28);
             cmbStatus.TabIndex = 2;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(380, 415);
+            btnSave.Location = new Point(434, 553);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 3;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
             // 
-            // btnSetRoomAssets
+            // lblAssetNumber
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            lblAssetNumber.AutoSize = true;
+            lblAssetNumber.Location = new Point(434, 36);
+            lblAssetNumber.Name = "lblAssetNumber";
+            lblAssetNumber.Size = new Size(50, 20);
+            lblAssetNumber.TabIndex = 4;
+            lblAssetNumber.Text = "label1";
+            // 
+            // frmSetRoomAssets
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(lblAssetNumber);
             Controls.Add(btnSave);
             Controls.Add(cmbStatus);
             Controls.Add(cmbPartNumber);
-            Controls.Add(txtAssetNumber);
-            Name = "btnSetRoomAssets";
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frmSetRoomAssets";
             Text = "btnSetRoomAssets";
+            Load += btnSetRoomAssets_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox txtAssetNumber;
         private ComboBox cmbPartNumber;
         private ComboBox cmbStatus;
         private Button btnSave;
+        private Label lblAssetNumber;
     }
 }

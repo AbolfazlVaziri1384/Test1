@@ -37,37 +37,44 @@
             // dgvOwner
             // 
             dgvOwner.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOwner.Location = new Point(12, 12);
+            dgvOwner.Location = new Point(14, 16);
+            dgvOwner.Margin = new Padding(3, 4, 3, 4);
             dgvOwner.Name = "dgvOwner";
-            dgvOwner.Size = new Size(240, 150);
+            dgvOwner.RowHeadersWidth = 51;
+            dgvOwner.Size = new Size(274, 200);
             dgvOwner.TabIndex = 0;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(374, 38);
+            txtSearch.Location = new Point(427, 51);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(100, 23);
+            txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(414, 415);
+            btnSave.Location = new Point(473, 553);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 2;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmTransferRoomAssetHistory
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnSave);
             Controls.Add(txtSearch);
             Controls.Add(dgvOwner);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmTransferRoomAssetHistory";
             Text = "frmTransferRoomAssetHistory";
+            Load += frmTransferRoomAssetHistory_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOwner).EndInit();
             ResumeLayout(false);
             PerformLayout();

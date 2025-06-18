@@ -18,7 +18,16 @@ namespace Final.Tools
         public enum Status : byte
         {
             Intact = 0,
-            Defective = 1
+            Defective = 1,
+            InRepair = 2
+        }
+        public enum PartNumber : byte
+        {
+            Refrigerator = 0,
+            Desk = 1,
+            Chair = 2,
+            Bed = 3,
+            Dresser = 4
         }
     }
 }

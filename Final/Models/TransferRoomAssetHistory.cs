@@ -36,9 +36,18 @@ public partial class TransferRoomAssetHistory
         using DormitoryDbContext db = new DormitoryDbContext();
         TransferRoomAssetHistory tra = db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == RoomAssetId).FirstOrDefault();
         foreach (var x in db.RoomAssigments.Where(i => i.RoomId == tra.RoomId).ToList())
-        { 
-            if(UserID ==  x.StudentId) return true;
+        {
+            if (UserID == x.StudentId) return true;
         }
         return false;
+    }
+    public static void DeleteOwner(long AssetId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        TransferRoomAssetHistory tra = db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == AssetId).FirstOrDefault();
+        db.TransferRoomAssetHistorys.Update(tra);
+        tra.RoomAsset.IsUsed = false;
+        db.TransferRoomAssetHistorys.Remove(tra);
+        db.SaveChanges();
     }
 }

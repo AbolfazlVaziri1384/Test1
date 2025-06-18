@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class frmRepairRoomAssetsRequest: Form
+    public partial class frmRepairRoomAssetsRequest : Form
     {
         public frmRepairRoomAssetsRequest()
         {
             InitializeComponent();
+        }
+        public long UserID;
+        private void frmRepairRoomAssetsRequest_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

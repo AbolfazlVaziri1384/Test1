@@ -22,6 +22,11 @@ public partial class RoomAsset
     public long? ModifiedBy { get; set; }
 
     public DateTime? ModifiedOn { get; set; }
+    public bool IsDeleted { get; set; }
+
+    public long? DeletedBy { get; set; }
+
+    public DateTime? DeletedOn { get; set; }
     public virtual User User { get; set; } = null!;
 
     public virtual ICollection<Repair> Repairs { get; set; } = new List<Repair>();
@@ -29,4 +34,20 @@ public partial class RoomAsset
     public virtual ICollection<SubstituteStudentAsset> SubstituteStudentAssets { get; set; } = new List<SubstituteStudentAsset>();
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
+
+    public static RoomAsset FindRoomAssetById(long Id)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.RoomAssets.Where(i => i.Id == Id).FirstOrDefault();
+    }
+    public static void DeleteRoomAsset(long AssetId, long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        RoomAsset ra = RoomAsset.FindRoomAssetById(AssetId);
+        db.RoomAssets.Update(ra);
+        ra.IsDeleted = true;
+        ra.DeletedBy = Models.User.FindUserById(UserId).Id;
+        ra.DeletedOn = DateTime.Now;
+        db.SaveChanges();
+    }
 }

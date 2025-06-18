@@ -24,6 +24,7 @@ public partial class Repair
     public static void SetRepair(long RoomAssetId , int Status , string Discription , long UserID)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
+
         Repair repair = new Repair();
         repair.RoomAssetId = RoomAssetId;
         repair.Status = Status;
@@ -32,6 +33,11 @@ public partial class Repair
         repair.IsRepair = true;
         repair.UserId = UserID;
         db.Repairs.Add(repair);
+        //هنگامی که درخواست تعمیر برای یک وسیله گذاشته می شود باید وضعیت آن هم به در حال تعمیر تغییر کند 
+        //تا زمانی که تعمیر به پایان برسه
+        RoomAsset roomAsset = db.RoomAssets.Where(r => r.Id == RoomAssetId).FirstOrDefault();
+        db.RoomAssets.Update(roomAsset);
+        roomAsset.Status = 2;
         db.SaveChanges();
     }
 }

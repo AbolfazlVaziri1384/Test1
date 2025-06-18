@@ -70,12 +70,12 @@ namespace Final
             dgvRoomAssets.Rows.Clear();
             foreach (var item in TRAlist)
             {
-                if ((item.StudentId == UserID) || (TransferRoomAssetHistory.IsInOneRoom(item.RoomAssetId, UserID)))
+                if (((item.StudentId == UserID) || (TransferRoomAssetHistory.IsInOneRoom(item.RoomAssetId, UserID))) && (item.RoomAsset.IsDeleted == false))
                 {
                     dgvRoomAssets.Rows.Add(item.Id.ToString(),
-                                            item.RoomAsset.PartNumber,
+                                            ((EnumTool.PartNumber)item.RoomAsset.PartNumber).ToString(),
                                             item.RoomAsset.AssetNumber,
-                                            (item.RoomAsset.Status == (int)EnumTool.Status.Intact)? "سالم" : "معیوب",
+                                            (item.RoomAsset.Status == (int)EnumTool.Status.Intact) ? "سالم" : (item.RoomAsset.Status == (int)EnumTool.Status.Defective) ? "معیوب" : "درحال تعمیر",
                                             HDateTimeTool.ToHDateTime(item.CreatOn),
                                             Models.User.GetFullName(Models.User.FindUserById(item.CreatBy)));
                 }

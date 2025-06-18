@@ -17,6 +17,7 @@ namespace Final
             InitializeComponent();
         }
         public long UserID;
+        public long RoomAssetID = -1;
         private void frmSetStudentAssets_Load(object sender, EventArgs e)
         {
 

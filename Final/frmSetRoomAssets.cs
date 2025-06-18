@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class btnSetRoomAssets: Form
+    public partial class frmSetRoomAssets : Form
     {
-        public btnSetRoomAssets()
+        public frmSetRoomAssets()
         {
             InitializeComponent();
+        }
+        public long UserID;
+        public long RoomAssetID = -1;
+        private void btnSetRoomAssets_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
