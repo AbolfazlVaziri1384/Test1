@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net;
 
 namespace Final.Models;
 
@@ -48,6 +50,38 @@ public partial class RoomAsset
         ra.IsDeleted = true;
         ra.DeletedBy = Models.User.FindUserById(UserId).Id;
         ra.DeletedOn = DateTime.Now;
+        db.SaveChanges();
+    }
+    public static void SetRoomAsset(int PartNumber, long AssetNumber, int status, long CreatBy)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        RoomAsset ra = new RoomAsset();
+        ra.PartNumber = PartNumber;
+        ra.AssetNumber = AssetNumber;
+        ra.Status = status;
+        ra.IsUsed = false;
+        ra.CreatBy = CreatBy;
+        ra.CreatOn = DateTime.Now;
+        ra.IsDeleted = false;
+
+        db.RoomAssets.Add(ra);
+        db.SaveChanges();
+    }
+    public static void EditRoomAsset(long RoomAssetID, int PartNumber, long AssetNumber, int status, long ModifyBy)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        RoomAsset ra = new RoomAsset();
+        ra = RoomAsset.FindRoomAssetById(RoomAssetID);
+        db.RoomAssets.Update(ra);
+
+        ra.PartNumber = PartNumber;
+        ra.AssetNumber = AssetNumber;
+        ra.Status = status;
+        ra.IsUsed = false;
+        ra.IsDeleted = false;
+        ra.ModifiedBy = RoomAsset.FindRoomAssetById(ModifyBy).Id;
+        ra.ModifiedOn = DateTime.Now;
+
         db.SaveChanges();
     }
 }

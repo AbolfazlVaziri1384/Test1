@@ -50,4 +50,10 @@ public partial class TransferRoomAssetHistory
         db.TransferRoomAssetHistorys.Remove(tra);
         db.SaveChanges();
     }
+    public static TransferRoomAssetHistory FindByAssetId(long AssetId)
+    { 
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == AssetId).FirstOrDefault();
+    }
+
 }

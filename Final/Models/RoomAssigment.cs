@@ -39,6 +39,11 @@ public partial class RoomAssigment
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.RoomAssigments.Where(i => i.Id == RoomAssigmentId).FirstOrDefault();
     }
+    public static RoomAssigment? FindByUserId(long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.RoomAssigments.Where(i => i.StudentId == UserId).FirstOrDefault();
+    }
     public static void SetRoomAssigment(long StudentId, long RoomId , long UserID)
     {
         using DormitoryDbContext db = new DormitoryDbContext();

@@ -39,6 +39,7 @@
             btnDeleteOwner = new Button();
             btnSetOwner = new Button();
             btnEditOwner = new Button();
+            btnShowOwner = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvRoomAssets).BeginInit();
             SuspendLayout();
             // 
@@ -160,11 +161,23 @@
             btnEditOwner.UseVisualStyleBackColor = true;
             btnEditOwner.Click += btnEditOwner_Click;
             // 
+            // btnShowOwner
+            // 
+            btnShowOwner.Location = new Point(443, 513);
+            btnShowOwner.Margin = new Padding(3, 4, 3, 4);
+            btnShowOwner.Name = "btnShowOwner";
+            btnShowOwner.Size = new Size(189, 31);
+            btnShowOwner.TabIndex = 25;
+            btnShowOwner.Text = "btnShowOwner";
+            btnShowOwner.UseVisualStyleBackColor = true;
+            btnShowOwner.Click += btnShowOwner_Click;
+            // 
             // frmRoomAssets
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnShowOwner);
             Controls.Add(btnEditOwner);
             Controls.Add(btnSetOwner);
             Controls.Add(btnDeleteOwner);
@@ -198,5 +211,6 @@
         private Button btnDeleteOwner;
         private Button btnSetOwner;
         private Button btnEditOwner;
+        private Button btnShowOwner;
     }
 }

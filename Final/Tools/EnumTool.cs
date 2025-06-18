@@ -23,11 +23,11 @@ namespace Final.Tools
         }
         public enum PartNumber : byte
         {
-            Refrigerator = 0,
-            Desk = 1,
-            Chair = 2,
-            Bed = 3,
-            Dresser = 4
+            Refrigerator = 1,
+            Desk = 2,
+            Chair = 3,
+            Bed = 4,
+            Dresser = 5
         }
     }
 }

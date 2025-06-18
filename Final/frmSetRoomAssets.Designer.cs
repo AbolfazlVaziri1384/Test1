@@ -37,6 +37,7 @@
             // cmbPartNumber
             // 
             cmbPartNumber.FormattingEnabled = true;
+            cmbPartNumber.Items.AddRange(new object[] { "یخچال", "میز", "صندلی", "تخت", "کمد" });
             cmbPartNumber.Location = new Point(395, 87);
             cmbPartNumber.Margin = new Padding(3, 4, 3, 4);
             cmbPartNumber.Name = "cmbPartNumber";
@@ -46,6 +47,7 @@
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
+            cmbStatus.Items.AddRange(new object[] { "سالم", "معیوب", "در حال تعمیر" });
             cmbStatus.Location = new Point(395, 125);
             cmbStatus.Margin = new Padding(3, 4, 3, 4);
             cmbStatus.Name = "cmbStatus";
@@ -54,22 +56,23 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(434, 553);
+            btnSave.Location = new Point(420, 221);
             btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(86, 31);
             btnSave.TabIndex = 3;
             btnSave.Text = "button1";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // lblAssetNumber
             // 
             lblAssetNumber.AutoSize = true;
             lblAssetNumber.Location = new Point(434, 36);
             lblAssetNumber.Name = "lblAssetNumber";
-            lblAssetNumber.Size = new Size(50, 20);
+            lblAssetNumber.Size = new Size(115, 20);
             lblAssetNumber.TabIndex = 4;
-            lblAssetNumber.Text = "label1";
+            lblAssetNumber.Text = "lblAssetNumber";
             // 
             // frmSetRoomAssets
             // 

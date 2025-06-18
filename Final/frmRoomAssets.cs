@@ -226,5 +226,42 @@ namespace Final
             frm.RoomAssetID = id;
             frm.ShowDialog();
         }
+
+        private void btnShowOwner_Click(object sender, EventArgs e)
+        {
+            if (dgvRoomAssets.Rows.Count == 0)
+            {
+                return;
+            }
+            long id;
+            id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
+            string masseg = "";
+            TransferRoomAssetHistory tra = TransferRoomAssetHistory.FindByAssetId(id);
+            string room;
+            switch (tra.RoomAsset.AssetNumber)
+            {
+                case 1:
+                    room = $"{tra.Room.Block.Dermitory.Name} در خوابگاه {tra.Room.Block.Name} در بلوک {tra.Room.FloorNumber} در طبقه {tra.Room.Number} اتاق";
+                    masseg = $"است {room} این یخچال برای"; 
+                    break;
+                case 2:
+                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
+                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این میز برای";
+                    break;
+                case 3:
+                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
+                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این صندلی برای";
+                    break;
+                case 4:
+                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
+                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این تخت برای";
+                    break;
+                case 5:
+                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
+                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این کمد برای";
+                    break;
+            }
+            MessageBoxTool.msgr(masseg);
+        }
     }
 }
