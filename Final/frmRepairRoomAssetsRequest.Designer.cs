@@ -53,6 +53,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(114, 27);
             txtSearch.TabIndex = 1;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // btnDelete
             // 
@@ -63,6 +64,7 @@
             btnDelete.TabIndex = 13;
             btnDelete.Text = "button3";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnPrint
             // 
@@ -73,6 +75,7 @@
             btnPrint.TabIndex = 12;
             btnPrint.Text = "button2";
             btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.Click += btnPrint_Click;
             // 
             // btnRepair
             // 
@@ -83,6 +86,7 @@
             btnRepair.TabIndex = 11;
             btnRepair.Text = "button1";
             btnRepair.UseVisualStyleBackColor = true;
+            btnRepair.Click += btnRepair_Click;
             // 
             // frmRepairRoomAssetsRequest
             // 

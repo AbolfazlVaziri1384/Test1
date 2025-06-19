@@ -33,8 +33,8 @@ namespace Final
                 result = MessageBoxTool.msgq("آیا از این درخواست مطمئن هستید ؟");
                 if (result == DialogResult.Yes)
                 {
-                    Repair.SetRepair(RoomAssetID, (cmbStatus.Text == "سالم") ? 0 : 1, txtDiscription.Text, UserID);
-                    MessageBoxTool.msgr("ثبت با موفقیت انجام شد");
+                    string serial = Repair.SetRepair(RoomAssetID, (cmbStatus.Text == "سالم") ? 0 : 1, txtDiscription.Text, UserID);
+                    MessageBoxTool.msgr($"{serial} ثبت با موفقیت انجام شد و شماره پیگیری شما");
                     Close();
                 }
             }
